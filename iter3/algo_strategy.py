@@ -24,14 +24,14 @@ class AlgoStrategy(gamelib.AlgoCore):
         super().__init__()
         seed = random.randrange(maxsize)
         random.seed(seed)
-        gamelib.debug_write('Random seed: {}'.format(seed))
+        # gamelib.debug_write('Random seed: {}'.format(seed))
         self.portOpened = False
 
     def on_game_start(self, config):
         """ 
         Read in config and perform any initial setup here 
         """
-        gamelib.debug_write('Configuring your custom algo strategy...')
+        # gamelib.debug_write('Configuring your custom algo strategy...')
         self.config = config
         global WALL, SUPPORT, TURRET, SCOUT, DEMOLISHER, INTERCEPTOR, MP, SP
         WALL = config["unitInformation"][0]["shorthand"]
@@ -76,8 +76,8 @@ class AlgoStrategy(gamelib.AlgoCore):
         """
         self.build_tower(game_state)
         self.build_wall(game_state)
-        self.update_wall(game_state)
         self.update_tower(game_state)
+        self.update_wall(game_state)
         self.spawnInterceptor(game_state)
         # If the turn is less than 5, stall with interceptors and wait to see enemy's base
         # if game_state.turn_number < 5:
@@ -98,11 +98,11 @@ class AlgoStrategy(gamelib.AlgoCore):
             enemyTowerCount = 0
             for y in range(14,19):
                 for x in range(0,19-y):
-                    gamelib.debug_write('game_state.game_map[4-x,y] {}'.format(game_state.game_map[4-x,y]))
+                    # gamelib.debug_write('game_state.game_map[4-x,y] {}'.format(game_state.game_map[4-x,y]))
                     if len(game_state.game_map[4-x,y]) > 0:
                         enemyTowerCount+=1
                 
-            gamelib.debug_write('enemyTowerCount {}'.format(enemyTowerCount))
+            # gamelib.debug_write('enemyTowerCount {}'.format(enemyTowerCount))
             
             # wait one round to generate more MP
             if min(enemyTowerCount,2) > (game_state.get_resource(MP) - 6) // 3:
@@ -110,15 +110,19 @@ class AlgoStrategy(gamelib.AlgoCore):
             
             if enemyTowerCount > 0 and not self.portOpened:                       
                 game_state.attempt_remove([6,13])
-                gamelib.debug_write('open port')
+                # gamelib.debug_write('open port')
                 self.portOpened = True
                 return
             if enemyTowerCount > 0 and self.portOpened:  
-                gamelib.debug_write('generate demolisher')
+                # gamelib.debug_write('generate demolisher')
                 game_state.attempt_spawn(DEMOLISHER, [3,10], min(2,enemyTowerCount))
                 self.portOpened = False
 
             game_state.attempt_spawn(SCOUT, [14, 0], 1000)
+
+        moreWalls = [[25, 13], [25, 12], [24, 11]]
+        game_state.attempt_spawn(WALL, moreWalls)
+        game_state.attempt_upgrade(moreWalls)
 
         # Lastly, if we have spare SP, let's build some supports
         support_locations = [[13, 2], [14, 2], [13, 3], [14, 3]]
@@ -133,7 +137,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         # More community tools available at: https://terminal.c1games.com/rules#Download
 
         # Place turrets that attack enemy units
-        turret_locations = [[2, 12], [2, 11], [4, 12],[5, 12],[4, 11],[4, 11]]
+        turret_locations = [[1, 12], [26, 12], [7, 9],[8, 9],[9, 9],[8,6],[11,6]]
         # attempt_spawn will try to spawn units if we have resources, and will check if a blocking unit is already there
         game_state.attempt_spawn(TURRET, turret_locations)
         
@@ -149,42 +153,48 @@ class AlgoStrategy(gamelib.AlgoCore):
         # # game_state.attempt_upgrade(wall_locations)
 
     def build_wall(self, game_state):
-        firstLineWall = []
-        for x in range(28):
-            if self.portOpened and x == 6:
-                continue
-            if x != 3:
-                firstLineWall.append([x,13])
-
-        secondLineWall = [[1,12]]
-        for x in range(6,27):
-            secondLineWall.append([x,12])
-
+        firstLineWall = [[0,13],[1,13],[2,11],[3,10],[4,10],[25,11],[26,13],[27,13]]
+        for x in range(6,25):
+            firstLineWall.append([x,10])
+        
+        firstLineWall.append([4,9])
+        firstLineWall.append([5,8])
+        # firstLineWall.append([6,7])
+        for x in range(6,12):
+            firstLineWall.append([x,7])
+        
         game_state.attempt_spawn(WALL, firstLineWall)
-        # game_state.attempt_spawn(WALL, secondLineWall)
 
     def update_wall(self, game_state):
         firstLineWall = []
-        for x in range(28):
-            if x != 3:
-                firstLineWall.append([x,13])
+        for x in range(6,25):
+            firstLineWall.append([x,10])
         firstLineWall.reverse()
-        secondLineWall = [[1,12]]
-        for x in range(6,27):
-            secondLineWall.append([x,12])
+        firstLineWall = firstLineWall + [[0,13],[1,13],[2,11],[3,10],[4,10],[25,11],[26,13],[27,13]]
+        firstLineWall.append([4,9])
+        firstLineWall.append([5,8])
+        # firstLineWall.append([6,7])
+        for x in range(6,12):
+            firstLineWall.append([x,7])
         game_state.attempt_upgrade(firstLineWall)
-        game_state.attempt_upgrade(secondLineWall)
     
     def update_tower(self, game_state):
-        turret_locations = [[2, 12], [2, 11], [4, 12],[5, 12],[4, 11],[4, 11]]
+        turret_locations = [[1, 12], [26, 12], [7, 9],[8, 9],[9, 9],[8,6],[11,6]]
+        
         game_state.attempt_upgrade(turret_locations)
 
     def spawnInterceptor(self, game_state):
         enemyMP = game_state.get_resource(MP,1)
-        if enemyMP > 9.0:
-            game_state.attempt_spawn(INTERCEPTOR, [3, 10], 1)
-        elif enemyMP > 15.0:
-            game_state.attempt_spawn(INTERCEPTOR, [3, 10], 2)
+        gamelib.debug_write('enemyMP {}'.format(enemyMP))
+
+        if enemyMP >= 15.0:
+            # game_state.attempt_spawn(INTERCEPTOR, [8, 5], 2)
+            game_state.attempt_spawn(INTERCEPTOR, [21, 7], 3)
+        elif enemyMP >= 10.0:
+            # game_state.attempt_spawn(INTERCEPTOR, [8, 5], 2)
+            game_state.attempt_spawn(INTERCEPTOR, [21, 7], 2)
+        elif enemyMP >= 5.0:
+            game_state.attempt_spawn(INTERCEPTOR, [21, 7], 1)
 
 
 
@@ -289,9 +299,9 @@ class AlgoStrategy(gamelib.AlgoCore):
             # When parsing the frame data directly, 
             # 1 is integer for yourself, 2 is opponent (StarterKit code uses 0, 1 as player_index instead)
             if not unit_owner_self:
-                gamelib.debug_write("Got scored on at: {}".format(location))
+                # gamelib.debug_write("Got scored on at: {}".format(location))
                 self.scored_on_locations.append(location)
-                gamelib.debug_write("All locations: {}".format(self.scored_on_locations))
+                # gamelib.debug_write("All locations: {}".format(self.scored_on_locations))
 
 
 if __name__ == "__main__":

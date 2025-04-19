@@ -54,8 +54,8 @@ class AlgoStrategy(gamelib.AlgoCore):
         game engine.
         """
         game_state = gamelib.GameState(self.config, turn_state)
-        gamelib.debug_write('Performing turn {} of your custom algo strategy'.format(game_state.turn_number))
-        # game_state.suppress_warnings(True)  #Comment or remove this line to enable warnings.
+        # gamelib.debug_write('Performing turn {} of your custom algo strategy'.format(game_state.turn_number))
+        game_state.suppress_warnings(True)  #Comment or remove this line to enable warnings.
 
         self.starter_strategy(game_state)
 
@@ -98,19 +98,24 @@ class AlgoStrategy(gamelib.AlgoCore):
             enemyTowerCount = 0
             for y in range(14,19):
                 for x in range(0,19-y):
-                    if TURRET in game_state.game_map[4-x,y]:
+                    gamelib.debug_write('game_state.game_map[4-x,y] {}'.format(game_state.game_map[4-x,y]))
+                    if len(game_state.game_map[4-x,y]) > 0:
                         enemyTowerCount+=1
                 
+            gamelib.debug_write('enemyTowerCount {}'.format(enemyTowerCount))
+            
             # wait one round to generate more MP
-            if enemyTowerCount <= 4 and enemyTowerCount > game_state.get_resource(MP) // 3 - 6:
+            if min(enemyTowerCount,2) > (game_state.get_resource(MP) - 6) // 3:
                 return
             
             if enemyTowerCount > 0 and not self.portOpened:                       
                 game_state.attempt_remove([6,13])
+                gamelib.debug_write('open port')
                 self.portOpened = True
                 return
-            if enemyTowerCount > 0 and self.portOpened:                       
-                game_state.attempt_spawn(DEMOLISHER, [16,2], enemyTowerCount)
+            if enemyTowerCount > 0 and self.portOpened:  
+                gamelib.debug_write('generate demolisher')
+                game_state.attempt_spawn(DEMOLISHER, [3,10], min(2,enemyTowerCount))
                 self.portOpened = False
 
             game_state.attempt_spawn(SCOUT, [14, 0], 1000)

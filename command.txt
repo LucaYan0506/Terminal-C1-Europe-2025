@@ -1,0 +1,7 @@
+//run the algo (check syntax error)
+./scripts/test_algo_linux python-algo
+
+//run match
+python3 ./scripts/run_match.py python-algo/ python-algo/
+
+

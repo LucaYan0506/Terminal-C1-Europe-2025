@@ -57,7 +57,10 @@ class AlgoStrategy(gamelib.AlgoCore):
         # gamelib.debug_write('Performing turn {} of your custom algo strategy'.format(game_state.turn_number))
         game_state.suppress_warnings(True)  #Comment or remove this line to enable warnings.
 
-        self.starter_strategy(game_state)
+        if game_state.turn_number < 2:
+            self.early_game(game_state)
+        else:
+            self.mid_game(game_state)
 
         game_state.submit_turn()
 
@@ -66,8 +69,10 @@ class AlgoStrategy(gamelib.AlgoCore):
     NOTE: All the methods after this point are part of the sample starter-algo
     strategy and can safely be replaced for your custom algo.
     """
+    def early_game(self,game_state):
+        game_state.attempt_spawn(SCOUT, [14, 0], 5)
 
-    def starter_strategy(self, game_state):
+    def mid_game(self, game_state):
         """
         For defense we will use a spread out layout and some interceptors early on.
         We will place turrets near locations the opponent managed to score on.
@@ -76,6 +81,12 @@ class AlgoStrategy(gamelib.AlgoCore):
         """
         self.build_tower(game_state)
         self.build_wall(game_state)
+        moreWalls = [[25, 13], [25, 12], [24, 11],[24,12],[23,9],[22,8]]
+        game_state.attempt_spawn(WALL, moreWalls)
+        game_state.attempt_upgrade(moreWalls)
+
+        self.replaceWall(game_state)
+
         self.update_tower(game_state)
         self.update_wall(game_state)
         self.spawnInterceptor(game_state)
@@ -120,9 +131,6 @@ class AlgoStrategy(gamelib.AlgoCore):
 
             game_state.attempt_spawn(SCOUT, [14, 0], 1000)
 
-        moreWalls = [[25, 13], [25, 12], [24, 11]]
-        game_state.attempt_spawn(WALL, moreWalls)
-        game_state.attempt_upgrade(moreWalls)
 
         # Lastly, if we have spare SP, let's build some supports
         support_locations = [[13, 2], [14, 2], [13, 3], [14, 3]]
@@ -185,21 +193,53 @@ class AlgoStrategy(gamelib.AlgoCore):
 
     def spawnInterceptor(self, game_state):
         enemyMP = game_state.get_resource(MP,1)
-        gamelib.debug_write('enemyMP {}'.format(enemyMP))
+        # gamelib.debug_write('enemyMP {}'.format(enemyMP))
 
         if enemyMP >= 15.0:
             # game_state.attempt_spawn(INTERCEPTOR, [8, 5], 2)
-            game_state.attempt_spawn(INTERCEPTOR, [21, 7], 3)
+            game_state.attempt_spawn(INTERCEPTOR, [21, 7], 4)
         elif enemyMP >= 10.0:
             # game_state.attempt_spawn(INTERCEPTOR, [8, 5], 2)
             game_state.attempt_spawn(INTERCEPTOR, [21, 7], 2)
         elif enemyMP >= 5.0:
             game_state.attempt_spawn(INTERCEPTOR, [21, 7], 1)
 
+    def replaceWall(self, game_state):
+        firstLineWall = [[0,13],[1,13],[2,11],[3,10],[4,10],[25,11],[26,13],[27,13]]
+        for x in range(6,25):
+            firstLineWall.append([x,10])
+        
+        firstLineWall.append([4,9])
+        firstLineWall.append([5,8])
+        # firstLineWall.append([6,7])
+        for x in range(6,12):
+            firstLineWall.append([x,7])
+        moreWalls = [[25, 13], [25, 12], [24, 11],[24,12],[23,9],[22,8]]
 
-
-
-
+        allWalls = moreWalls + firstLineWall
+        for [x,y] in allWalls:
+            tile = game_state.game_map[x, y]
+            if len(tile) > 0:
+                tile = tile[0]
+                if tile.unit_type != WALL:
+                    return
+            else:
+                return
+            currHealth = tile.health 
+            originHealth = tile.max_health 
+            if currHealth/originHealth < 0.5:
+                game_state.attempt_remove([x,y])
+                dirs = [
+                        [1,0],
+                        [0,1],
+                        [0,-1],
+                        [1,1],
+                        [1,-1],
+                        ]
+                # for dir in dirs:
+                #     if [x + dir[0], y + dir[1]] == [5,10]:
+                #         continue
+                #     game_state.attempt_spawn(WALL, [x + dir[0], y + dir[1]])
 
 
     def stall_with_interceptors(self, game_state):

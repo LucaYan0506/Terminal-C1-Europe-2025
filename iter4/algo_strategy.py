@@ -114,6 +114,10 @@ class AlgoStrategy(gamelib.AlgoCore):
 
 
         # Lastly, if we have spare SP, let's build some supports
+        # maybe use support earlier instead of upgrading walls.
+        # dynamic move (e.g. if i got damaged on specif location, more defender at that point)
+        # dynamic move (check the health of specific terittory and predict if scout can do damage)
+        #               also check what happen if enemy place new towers.
         for x in range(14,19):
             game_state.attempt_spawn(SUPPORT, [x,7])
             game_state.attempt_upgrade([x,7])

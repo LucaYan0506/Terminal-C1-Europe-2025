@@ -34,15 +34,19 @@ class AlgoStrategy(gamelib.AlgoCore):
         for x in range(12,21):
             self.firstLineWall.append([x,8])
 
-        self.firstLineWall.append([22,9])
-        self.firstLineWall.append([21,9])
+        self.firstLineWall.append([22,8])
+        # self.firstLineWall.append([21,9])
         self.firstLineWall.append([11,9])
         self.firstLineWall.append([21,8])
      
 
         # self.moreWalls = []
         self.moreWalls = [[23,10],[25, 13], [25, 12], [24, 11],[24,12],[22,8]]
-        self.turret_locations = [[6,12],[7,11],[5,10],[4,11],[3,12],[26,12],[24,10],[1,12],[9,9],[11,8]]
+        self.turret_locations = [[6,12],[5,10],[4,11],[3,12],[26,12]]
+        
+
+        self.support_locations = [[5,8]]
+        
         self.portToOpen = [2,11]
     def on_game_start(self, config):
         """ 
@@ -90,6 +94,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         game_state.attempt_spawn(SCOUT, [14, 0], 5)
         self.build_wall(game_state)
         self.build_tower(game_state)
+        self.build_support(game_state)
         self.attack(game_state)
 
     def mid_game(self, game_state):
@@ -100,6 +105,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         If there are no stationary units to attack in the front, we will send Scouts to try and score quickly.
         """
         self.build_tower(game_state)
+        self.build_support(game_state)
         self.build_wall(game_state)
         game_state.attempt_spawn(WALL, self.moreWalls)
         game_state.attempt_upgrade(self.moreWalls)
@@ -107,23 +113,30 @@ class AlgoStrategy(gamelib.AlgoCore):
         self.replaceWall(game_state)
 
         self.update_tower(game_state)
+        self.update_support(game_state)
         self.update_wall(game_state)
         self.spawnInterceptor(game_state)
        
         self.attack(game_state)
 
+        if game_state.get_resource(MP) > 15:
+            affordable = game_state.number_affordable(SCOUT)
+            if affordable > 0:
+                game_state.attempt_spawn(SCOUT, [3, 10], affordable)
+                # gamelib.debug_write("Spawned {} scouts at [3,10] with {} MP".format(affordable, game_state.get_resource(MP)))
 
         # Lastly, if we have spare SP, let's build some supports
         # maybe use support earlier instead of upgrading walls.
         # dynamic move (e.g. if i got damaged on specif location, more defender at that point)
         # dynamic move (check the health of specific terittory and predict if scout can do damage)
         #               also check what happen if enemy place new towers.
-        for x in range(14,19):
-            game_state.attempt_spawn(SUPPORT, [x,7])
-            game_state.attempt_upgrade([x,7])
 
     def build_tower(self, game_state):
         game_state.attempt_spawn(TURRET, self.turret_locations)
+
+    def build_support(self, game_state):
+        # Build supports in positions that shield our mobile units
+        game_state.attempt_spawn(SUPPORT, self.support_locations)
 
     def build_wall(self, game_state):
         if self.portOpened:
@@ -135,6 +148,9 @@ class AlgoStrategy(gamelib.AlgoCore):
 
     def update_wall(self, game_state):
         game_state.attempt_upgrade(self.firstLineWall)
+
+    def update_support(self, game_state):
+        game_state.attempt_upgrade(self.support_locations)
     
     def update_tower(self, game_state):
         game_state.attempt_upgrade(self.turret_locations)

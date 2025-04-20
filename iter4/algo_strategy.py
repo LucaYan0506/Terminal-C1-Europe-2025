@@ -43,6 +43,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         # self.moreWalls = []
         self.moreWalls = [[23,10],[25, 13], [25, 12], [24, 11],[24,12],[22,8]]
         self.turret_locations = [[6,12],[5,10],[4,11],[3,12],[26,12]]
+        self.moreSupportLocations = [[9, 9], [8, 9], [7, 11], [6, 8], [7, 7]]
         
 
         self.support_locations = [[5,8]]
@@ -130,6 +131,10 @@ class AlgoStrategy(gamelib.AlgoCore):
         # dynamic move (e.g. if i got damaged on specif location, more defender at that point)
         # dynamic move (check the health of specific terittory and predict if scout can do damage)
         #               also check what happen if enemy place new towers.
+
+        for x, y in self.moreSupportLocations:
+            game_state.attempt_spawn(SUPPORT, [x,y])
+            game_state.attempt_upgrade([x,y])
 
     def build_tower(self, game_state):
         game_state.attempt_spawn(TURRET, self.turret_locations)

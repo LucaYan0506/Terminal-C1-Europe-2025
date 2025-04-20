@@ -1,0 +1,10 @@
+C:\Users\lucay\Desktop\Terminal-C1-Europe-2025\iter3\algo_strategy.py:40: SyntaxWarning: list indices must be integers or slices, not tuple; perhaps you missed a comma?
+  self.moreWalls = [[23,10][25, 13], [25, 12], [24, 11],[24,12],[23,9],[22,8]]
+Traceback (most recent call last):
+  File "C:\Users\lucay\Desktop\Terminal-C1-Europe-2025\iter3\algo_strategy.py", line 328, in <module>
+    algo = AlgoStrategy()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\lucay\Desktop\Terminal-C1-Europe-2025\iter3\algo_strategy.py", line 40, in __init__
+    self.moreWalls = [[23,10][25, 13], [25, 12], [24, 11],[24,12],[23,9],[22,8]]
+                      ~~~~~~~^^^^^^^^
+TypeError: list indices must be integers or slices, not tuple

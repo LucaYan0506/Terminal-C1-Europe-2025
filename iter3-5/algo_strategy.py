@@ -42,7 +42,7 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         # self.moreWalls = []
         self.moreWalls = [[23,10],[25, 13], [25, 12], [24, 11],[24,12],[22,8]]
-        self.turret_locations = [[6,12],[7,11],[5,10],[4,11],[3,12],[26,12],[24,10],[1,12],[25,12],[25,11],[9,9],[11,8]]
+        self.turret_locations = [[6,12],[7,11],[5,10],[4,11],[3,12],[26,12],[24,10],[1,12],[9,9],[11,8]]
         self.portToOpen = [2,11]
     def on_game_start(self, config):
         """ 
@@ -87,6 +87,7 @@ class AlgoStrategy(gamelib.AlgoCore):
     strategy and can safely be replaced for your custom algo.
     """
     def early_game(self,game_state):
+        game_state.attempt_spawn(SCOUT, [14, 0], 5)
         self.build_wall(game_state)
         self.build_tower(game_state)
         self.attack(game_state)
@@ -103,7 +104,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         game_state.attempt_spawn(WALL, self.moreWalls)
         game_state.attempt_upgrade(self.moreWalls)
 
-        self.replaceBuilding(game_state)
+        self.replaceWall(game_state)
 
         self.update_tower(game_state)
         self.update_wall(game_state)
@@ -113,10 +114,9 @@ class AlgoStrategy(gamelib.AlgoCore):
 
 
         # Lastly, if we have spare SP, let's build some supports
-        supports_locations = [[6,8],[5,8],[7,8],[8,7],[7,7],[6,7]]
-        for loc in supports_locations:
-            game_state.attempt_spawn(SUPPORT, loc)
-            game_state.attempt_upgrade(loc)
+        for x in range(14,19):
+            game_state.attempt_spawn(SUPPORT, [x,7])
+            game_state.attempt_upgrade([x,7])
 
     def build_tower(self, game_state):
         game_state.attempt_spawn(TURRET, self.turret_locations)
@@ -138,7 +138,7 @@ class AlgoStrategy(gamelib.AlgoCore):
     def spawnInterceptor(self, game_state):
         enemyMP = game_state.get_resource(MP,1)
         # gamelib.debug_write('enemyMP {}'.format(enemyMP))
-        base = 7.0
+        base = 8.0
         if game_state.turn_number < 5:
             base = 6.0
         if enemyMP >= base * 3:
@@ -150,8 +150,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         elif enemyMP >= base:
             game_state.attempt_spawn(INTERCEPTOR, [2, 11], 1)
 
-    def replaceBuilding(self, game_state):    
-        currSP = game_state.get_resource(SP)
+    def replaceWall(self, game_state):    
         allWalls = self.moreWalls + self.firstLineWall
         for [x,y] in allWalls:
             tile = game_state.game_map[x, y]
@@ -163,9 +162,8 @@ class AlgoStrategy(gamelib.AlgoCore):
                 continue
             currHealth = tile.health 
             originHealth = tile.max_health 
-            if currHealth/originHealth < 0.5 and currSP > 1:
+            if currHealth/originHealth < 0.5:
                 game_state.attempt_remove([x,y])
-                currSP -= 1
                 dirs = [
                         [1,0],
                         [0,1],
@@ -178,20 +176,6 @@ class AlgoStrategy(gamelib.AlgoCore):
                 #         continue
                 #     game_state.attempt_spawn(WALL, [x + dir[0], y + dir[1]])
 
-        for [x,y] in self.turret_locations:
-            tile = game_state.game_map[x, y]
-            if len(tile) > 0:
-                tile = tile[0]
-                if tile.unit_type != WALL:
-                    continue
-            else:
-                continue
-            currHealth = tile.health 
-            originHealth = tile.max_health 
-            if currHealth/originHealth < 0.5 and currSP > 1:
-                currSP -= 2
-                game_state.attempt_remove([x,y])
-     
     def attack(self,game_state):
         # Sending more at once is better since attacks can only hit a single scout at a time
         # check if demolisher needed
@@ -207,8 +191,7 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         
         # wait one round to generate more MP
-        # if not self.portOpened and enemyTowerCount > (game_state.get_resource(MP)) // int(3*1.5):
-        if enemyTowerCount < 4 and enemyTowerCount > (game_state.get_resource(MP)) // int(3*1.5):
+        if not self.portOpened and enemyTowerCount > (game_state.get_resource(MP)) // int(3*1.5):
             return
         
         # if enemyTowerCount > 0 and not self.portOpened:                       
@@ -231,7 +214,7 @@ class AlgoStrategy(gamelib.AlgoCore):
     def ideal_exit(self, game_state, final_position):
         """Check if the left-side diagonal path [0,14] to [13,27] is clear (no wall or turret)."""
         
-        for i in range(5):
+        for i in range(6):
             x = i
             y = 14 + i
             if [x,y] == final_position:

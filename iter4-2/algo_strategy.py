@@ -26,8 +26,8 @@ class AlgoStrategy(gamelib.AlgoCore):
         random.seed(seed)
         # gamelib.debug_write('Random seed: {}'.format(seed))
         self.portOpened = False
-        
-        self.firstLineWall = [[8,11],[7,12],[6,13],[5,13],[8,10],[9,10],[10,9],[24,10],[25,11],[26,13],[27,13],[23,9]]
+
+        self.firstLineWall = [[8,11],[7,12],[8,10],[9,9],[10,8],[24,10],[25,11],[26,13],[27,13],[23,9]]
         self.firstLineWall.append([0,13])
         self.firstLineWall.append([1,13])
         self.firstLineWall.append([2,13])
@@ -36,19 +36,20 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         self.firstLineWall.append([22,8])
         # self.firstLineWall.append([21,9])
-        self.firstLineWall.append([11,9])
+        self.firstLineWall.append([11,8])
         self.firstLineWall.append([21,8])
      
 
         # self.moreWalls = []
-        self.moreWalls = [[23,10],[25, 13], [25, 12], [24, 11],[24,12],[22,8]]
-        self.turret_locations = [[6,12],[5,10],[4,11],[3,12],[26,12]]
+        self.moreWalls = [[23,10],[25, 13], [24, 11],[24,12],[22,8],[3,13]]
+        self.turret_locations = [[6,12],[7,11],[5,10],[4,11],[3,12],[26,12],[25, 12]]
+        # add more moreSupportLocations and buiild them when SP > 10
         self.moreSupportLocations = [[9, 9], [8, 9], [7, 11], [6, 8], [7, 7]]
         
 
         self.support_locations = [[5,8]]
         
-        self.portToOpen = [4,9]
+        self.portToOpen = [1,12]
     def on_game_start(self, config):
         """ 
         Read in config and perform any initial setup here 
@@ -163,20 +164,22 @@ class AlgoStrategy(gamelib.AlgoCore):
     def spawnInterceptor(self, game_state):
         enemyMP = game_state.get_resource(MP,1)
         # gamelib.debug_write('enemyMP {}'.format(enemyMP))
-        base = 8.0
-        if game_state.turn_number < 5:
-            base = 6.0
+        base = 6.0
 
         enemy_support_counter = self.count_enemy_support(game_state)
 
         if enemyMP >= base * 3:
             # game_state.attempt_spawn(INTERCEPTOR, [8, 5], 2)
-            game_state.attempt_spawn(INTERCEPTOR, [2, 11], 4 + int(enemy_support_counter / 1.5))
+            game_state.attempt_spawn(INTERCEPTOR, [3, 10], int(enemy_support_counter / 1.5))
+            game_state.attempt_spawn(INTERCEPTOR, [2, 11], 2)
+            game_state.attempt_spawn(INTERCEPTOR, [1, 12], 2)
         elif enemyMP >= base * 2:
             # game_state.attempt_spawn(INTERCEPTOR, [8, 5], 2)
-            game_state.attempt_spawn(INTERCEPTOR, [2, 11], 2 + int(enemy_support_counter / 1.5))
+            game_state.attempt_spawn(INTERCEPTOR, [3, 10], 2 + int(enemy_support_counter / 1.5))
         elif enemyMP >= base:
-            game_state.attempt_spawn(INTERCEPTOR, [2, 11], 1 + int(enemy_support_counter / 1.5))
+            game_state.attempt_spawn(INTERCEPTOR, [3, 10], 1 + int(enemy_support_counter / 1.5))
+        elif enemy_support_counter > 0:
+            game_state.attempt_spawn(INTERCEPTOR, [3, 10], 1 + int(enemy_support_counter / 1.5))
 
     def replaceWall(self, game_state):    
         allWalls = self.moreWalls + self.firstLineWall
@@ -204,6 +207,8 @@ class AlgoStrategy(gamelib.AlgoCore):
                 #         continue
                 #     game_state.attempt_spawn(WALL, [x + dir[0], y + dir[1]])
 
+    # predict if demolisher will open a whole, if so send cout
+    # or check enemy structure point, if less than 5, send
     def attack(self,game_state):
         # Sending more at once is better since attacks can only hit a single scout at a time
         # check if demolisher needed
@@ -222,7 +227,7 @@ class AlgoStrategy(gamelib.AlgoCore):
                     if game_state.game_map[x,y][0].upgraded:
                         enemyWallCount += 0.5
 
-        numberOfDemolisher = int(enemyTowerCount + enemyWallCount // 4)
+        numberOfDemolisher = int(enemyTowerCount + enemyWallCount // 4) 
         # wait one round to generate more MP
         if numberOfDemolisher <= 5 and numberOfDemolisher * 3 > (game_state.get_resource(MP)):
             return

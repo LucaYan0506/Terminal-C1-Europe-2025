@@ -24,14 +24,14 @@ class AlgoStrategy(gamelib.AlgoCore):
         super().__init__()
         seed = random.randrange(maxsize)
         random.seed(seed)
-        gamelib.debug_write('Random seed: {}'.format(seed))
+        #gamelib.debug_write("path: {}".format(path))('Random seed: {}'.format(seed))
         self.portOpened = False
 
     def on_game_start(self, config):
         """ 
         Read in config and perform any initial setup here 
         """
-        gamelib.debug_write('Configuring your custom algo strategy...')
+        #gamelib.debug_write("path: {}".format(path))('Configuring your custom algo strategy...')
         self.config = config
         global WALL, SUPPORT, TURRET, SCOUT, DEMOLISHER, INTERCEPTOR, MP, SP
         WALL = config["unitInformation"][0]["shorthand"]
@@ -54,7 +54,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         game engine.
         """
         game_state = gamelib.GameState(self.config, turn_state)
-        # gamelib.debug_write('Performing turn {} of your custom algo strategy'.format(game_state.turn_number))
+        # #gamelib.debug_write("path: {}".format(path))('Performing turn {} of your custom algo strategy'.format(game_state.turn_number))
         game_state.suppress_warnings(True)  #Comment or remove this line to enable warnings.
 
         self.starter_strategy(game_state)
@@ -98,11 +98,11 @@ class AlgoStrategy(gamelib.AlgoCore):
             enemyTowerCount = 0
             for y in range(14,19):
                 for x in range(0,19-y):
-                    gamelib.debug_write('game_state.game_map[4-x,y] {}'.format(game_state.game_map[4-x,y]))
+                    #gamelib.debug_write("path: {}".format(path))('game_state.game_map[4-x,y] {}'.format(game_state.game_map[4-x,y]))
                     if len(game_state.game_map[4-x,y]) > 0:
                         enemyTowerCount+=1
                 
-            gamelib.debug_write('enemyTowerCount {}'.format(enemyTowerCount))
+            #gamelib.debug_write("path: {}".format(path))('enemyTowerCount {}'.format(enemyTowerCount))
             
             # wait one round to generate more MP
             if min(enemyTowerCount,2) > (game_state.get_resource(MP) - 6) // 3:
@@ -110,11 +110,11 @@ class AlgoStrategy(gamelib.AlgoCore):
             
             if enemyTowerCount > 0 and not self.portOpened:                       
                 game_state.attempt_remove([6,13])
-                gamelib.debug_write('open port')
+                #gamelib.debug_write("path: {}".format(path))('open port')
                 self.portOpened = True
                 return
             if enemyTowerCount > 0 and self.portOpened:  
-                gamelib.debug_write('generate demolisher')
+                #gamelib.debug_write("path: {}".format(path))('generate demolisher')
                 game_state.attempt_spawn(DEMOLISHER, [3,10], min(2,enemyTowerCount))
                 self.portOpened = False
 
@@ -289,9 +289,9 @@ class AlgoStrategy(gamelib.AlgoCore):
             # When parsing the frame data directly, 
             # 1 is integer for yourself, 2 is opponent (StarterKit code uses 0, 1 as player_index instead)
             if not unit_owner_self:
-                gamelib.debug_write("Got scored on at: {}".format(location))
+                #gamelib.debug_write("path: {}".format(path))("Got scored on at: {}".format(location))
                 self.scored_on_locations.append(location)
-                gamelib.debug_write("All locations: {}".format(self.scored_on_locations))
+                #gamelib.debug_write("path: {}".format(path))("All locations: {}".format(self.scored_on_locations))
 
 
 if __name__ == "__main__":

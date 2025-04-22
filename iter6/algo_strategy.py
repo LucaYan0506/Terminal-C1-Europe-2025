@@ -21,13 +21,12 @@ class AlgoStrategy(gamelib.AlgoCore):
             self.firstLineWall.append([x,8])
 
         self.firstLineWall.append([1,12])
-        self.firstLineWall.append([4,9])
 
 
         self.moreWalls = [[8,9],[7,10],[6,11],[5,12]]
         self.turret_locations = [[5,11],[6,10],[7,9]] # [23,12],[22,11],[21,10],[20,9]
         self.turret_locations.append([4,11])
-        self.turret_locations.append([4,9])
+        self.turret_locations.append([2,11])
         # self.turret_locations += [[25,11],[24,10],[23,9]]
         self.support_locations = [[8,7], [19,7]]
 
@@ -108,14 +107,16 @@ class AlgoStrategy(gamelib.AlgoCore):
             self.kamikaze_attack_location = 0
 
         if self.will_kamikaze_attack:
-            if self.kamikaze_attack_location == LEFT_KAMIKAZE:
-                game_state.attempt_spawn(WALL, [4,12])
+            # if self.kamikaze_attack_location == LEFT_KAMIKAZE:
+            game_state.attempt_spawn(WALL, [4,12])
             self.kamikaze_attack(game_state)
             self.will_kamikaze_attack = False
             self.kamikaze_attack_location = 0
         else:
             if game_state.game_map[4,12] and game_state.game_map[4,12][0].unit_type == WALL:
                 game_state.attempt_remove([4,12])
+
+            game_state.attempt_spawn(TURRET, [[26,12]])
 
             self.check_potential_enemy_attack(game_state)
             self.build_tower(game_state)
@@ -175,7 +176,7 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         # if top right wall are low hp, build tower at edge (potentially, enemy will attack to this side)
         if self.top_right_wall_weak(game_state):
-            game_state.attempt_spawn(TURRET, [[26,12],[25,11],[22,10]])
+            game_state.attempt_spawn(TURRET, [[26,12],[24,12],[22,10]])
 
     def top_right_wall_weak(self, game_state):
         top_right_wall = [[24,13],[23,12],[22,11]]
@@ -348,17 +349,13 @@ class AlgoStrategy(gamelib.AlgoCore):
             attackRight = False
 
         if attackRight:
-            # sell wall on the [26,13]
-            if game_state.game_map[25,13] and game_state.game_map[25,13][0].unit_type == WALL:
-                game_state.attempt_remove([[25,13],[26,13]])
+            game_state.attempt_remove([[26,12],[26,13]])
+            # self.portToOpen.append([26,13])
+            # self.portOpened = True
             return RIGHT_KAMIKAZE
         else:
-            # sell wall on [2, 13]
-            if game_state.game_map[2,13] and game_state.game_map[2,13][0].unit_type == WALL:
-                game_state.attempt_remove([[1,12],[1,13]])
-            # sell wall on [3,10]
-            if game_state.game_map[4,9] and game_state.game_map[4,9][0].unit_type == WALL:
-                game_state.attempt_remove([4,9])
+            game_state.attempt_remove([[1,12],[1,13],[3,10]])
+
             return LEFT_KAMIKAZE
 
     def kamikaze_attack(self, game_state):

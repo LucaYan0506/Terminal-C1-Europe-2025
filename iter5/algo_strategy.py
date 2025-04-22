@@ -26,23 +26,26 @@ class AlgoStrategy(gamelib.AlgoCore):
         random.seed(seed)
         # gamelib.debug_write('Random seed: {}'.format(seed))
 
-        self.firstLineWall = [[23,12],[22,11],[21,10],[20,9]]
-        for x in range(4):
-            self.firstLineWall.append([x,13])
-            self.firstLineWall.append([27 - x,13])
+        self.firstLineWall = {
+            'LEFT':[[0,13],[3,13],[1,12],[3,10]],
+            'MID':[],
+            'RIGHT':[[23,12],[22,11],[21,10],[20,9]]
+        }
+
+        for x in range(24,28):
+            self.firstLineWall['RIGHT'].append([x,13])
 
         for x in range(8,20):
-            self.firstLineWall.append([x,8])
-
-        self.firstLineWall.append([1,12])
-        self.firstLineWall.append([3,10])
-
+            self.firstLineWall['MID'].append([x,8])
 
         self.moreWalls = [[8,9],[7,10],[6,11],[5,12]]
-        self.turret_locations = [[5,11],[6,10],[7,9]] # [23,12],[22,11],[21,10],[20,9]
-        self.turret_locations.append([2,11])
-        self.turret_locations.append([4,9])
-        # self.turret_locations += [[25,11],[24,10],[23,9]]
+
+        self.turret_locations = {
+            'LEFT' : [[5,11],[6,10],[7,9], [2,11], [4,9]],
+            'MID' : [],
+            'RIGHT' : []
+        } 
+
         self.support_locations = [[10,7], [17,7]]
 
         # add more moreSupportLocations and buiild them when SP > 10
@@ -50,8 +53,7 @@ class AlgoStrategy(gamelib.AlgoCore):
         for x in range(8,20):
             self.moreSupportLocations.append([x, 7])
         
-        self.portToOpen = []
-        self.portOpened = False
+        self.enemy_append_removal_unit = set()
 
     def on_game_start(self, config):
         """ 
@@ -109,20 +111,21 @@ class AlgoStrategy(gamelib.AlgoCore):
         For offense we will use long range demolishers if they place stationary units near the enemy's front.
         If there are no stationary units to attack in the front, we will send Scouts to try and score quickly.
         """
-        self.check_potential_enemy_attack(game_state)
-        self.build_tower(game_state)
-        self.build_wall(game_state)
+
+        predicted_attack_directions = self.check_potential_enemy_attack(game_state)
+        self.build_tower(game_state, predicted_attack_directions)
+        self.build_wall(game_state, predicted_attack_directions)
         self.build_support(game_state)
         game_state.attempt_spawn(WALL, self.moreWalls)
         game_state.attempt_upgrade(self.moreWalls)
 
         self.replaceWall(game_state)
 
-        self.update_tower(game_state)
+        self.update_tower(game_state, predicted_attack_directions)
+        self.update_wall(game_state, predicted_attack_directions)
         self.update_support(game_state)
-        self.update_wall(game_state)
 
-        self.spawnInterceptor(game_state)
+        self.spawnInterceptor(game_state, predicted_attack_directions)
 
         self.attack(game_state)
 
@@ -136,33 +139,61 @@ class AlgoStrategy(gamelib.AlgoCore):
             game_state.attempt_spawn(SUPPORT, [x,y])
             game_state.attempt_upgrade([x,y])
 
-    def build_tower(self, game_state):
-        game_state.attempt_spawn(TURRET, self.turret_locations)
+    def build_tower(self, game_state, predicted_attack_directions = []):
+        # build turret where we predict an attack to happen first
+        for dir in predicted_attack_directions:
+            game_state.attempt_spawn(TURRET, self.turret_locations[dir])
+
+        # build the rest
+        for dir in self.turret_locations.keys():
+            if dir not in predicted_attack_directions:
+                game_state.attempt_spawn(TURRET, self.turret_locations[dir])
 
     def build_support(self, game_state):
         # Build supports in positions that shield our mobile units
         game_state.attempt_spawn(SUPPORT, self.support_locations)
 
-    def build_wall(self, game_state):
-        if self.portOpened:
-            for [x,y] in self.firstLineWall:
-                if [x,y] not in self.portToOpen:  
-                    game_state.attempt_spawn(WALL, [x,y])
-            # reset
-            self.portOpened = False
-            self.portOpened = []
-        else:
-            game_state.attempt_spawn(WALL, self.firstLineWall)
+    def build_wall(self, game_state, predicted_attack_directions = []):
+        # if top right wall are low hp, start build tower at edge (potentially, enemy will attack to this side)
+        if game_state.turn_number != 0 and self.top_right_wall_weak(game_state):
+            game_state.attempt_spawn(TURRET, [[22,11],[21,10],[20,9],[25,11],[23,9]])
+            self.turret_locations['RIGHT'] += [[22,11],[21,10],[20,9],[25,11],[23,9]]
+            
+            self.removeWall(game_state,[[20,9],[21,10]])
 
-        # if top right wall are low hp, build tower at edge (potentially, enemy will attack to this side)
-        if self.top_right_wall_weak(game_state):
-            game_state.attempt_spawn(TURRET, [[26,12],[25,11],[24,10]])
+            newWall = [[24,10],[26,12]]
+            for wall in newWall:
+                if wall not in self.firstLineWall['RIGHT']:
+                    self.firstLineWall['RIGHT'].append(wall)
+            
+            newWall = [[22,12],[23,12]]
+            for wall in newWall:
+                if wall not in self.moreWalls:
+                    self.moreWalls.append(wall)
+
+
+        # build turret where we predict an attack to happen first
+        for dir in predicted_attack_directions:
+            game_state.attempt_spawn(WALL, self.firstLineWall[dir])
+
+        # build the rest
+        for dir in self.turret_locations.keys():
+            if dir not in predicted_attack_directions:
+                game_state.attempt_spawn(WALL, self.firstLineWall[dir])
+
+    def removeWall(self,game_state, walls):
+            for wall in walls:
+                if len(game_state.game_map[wall[0],wall[1]]) > 0 and game_state.game_map[wall[0],wall[1]][0].unit_type == WALL:
+                    game_state.attempt_remove(wall)
+                for dir in self.firstLineWall.keys():
+                    if wall in self.firstLineWall[dir]:
+                        self.firstLineWall[dir].remove(wall)
 
     def top_right_wall_weak(self, game_state):
         top_right_wall = [[24,13],[23,12],[22,11]]
         for [x,y] in top_right_wall:
             if len(game_state.game_map[x, y]) == 0:
-                continue
+                return True
             unit = game_state.game_map[x, y][0]
             currHP = unit.health
             originHP = unit.max_health
@@ -171,41 +202,64 @@ class AlgoStrategy(gamelib.AlgoCore):
             
         return False
 
-    def update_wall(self, game_state):
-        game_state.attempt_upgrade(self.firstLineWall)
+    def update_wall(self, game_state, predicted_attack_directions = []):
+        # upgrade wall where we predict an attack to happen first
+        for dir in predicted_attack_directions:
+            game_state.attempt_upgrade(self.firstLineWall[dir])
+
+        # upgrade the rest
+        for dir in self.firstLineWall.keys():
+            if dir not in predicted_attack_directions:
+                game_state.attempt_upgrade(self.firstLineWall[dir])
 
     def update_support(self, game_state):
         game_state.attempt_upgrade(self.support_locations)
     
-    def update_tower(self, game_state):
-        game_state.attempt_upgrade(self.turret_locations)
+    def update_tower(self, game_state, predicted_attack_directions = []):
+        # upgrade turret where we predict an attack to happen first
+        for dir in predicted_attack_directions:
+            game_state.attempt_upgrade(self.turret_locations[dir])
 
-    def spawnInterceptor(self, game_state):
+        # upgrade the rest
+        for dir in self.turret_locations.keys():
+            if dir not in predicted_attack_directions:
+                game_state.attempt_upgrade(self.turret_locations[dir])
+
+    def spawnInterceptor(self, game_state, predicted_attack_directions):
         enemyMP = game_state.get_resource(MP,1)
         # gamelib.debug_write('enemyMP {}'.format(enemyMP))
-        base = 6.0
+        base = 7.0
 
-        enemy_support_counter = min(self.count_enemy_support(game_state),3)
-
-        if enemyMP >= base * 3:
-            game_state.attempt_spawn(INTERCEPTOR, [7, 6], 2 + int(enemy_support_counter / 3))
-            game_state.attempt_spawn(INTERCEPTOR, [23, 9], 2 + int(enemy_support_counter / 3))
-        elif enemyMP >= base * 2:
-            # game_state.attempt_spawn(INTERCEPTOR, [8, 5], 2)
-            game_state.attempt_spawn(INTERCEPTOR, [7, 6], 1 + int(enemy_support_counter / 3))
-            game_state.attempt_spawn(INTERCEPTOR, [23, 9], 1 + int(enemy_support_counter / 3))
+        enemy_support_counter = min(self.count_enemy_support(game_state),6)
+        interceptor_num = 0
+        if enemyMP >= base + 5.0:
+            interceptor_num = 4 + int(enemy_support_counter + 3 / 3)
+        elif enemyMP >= base + 3.0:
+            interceptor_num = 3 + int(enemy_support_counter / 3)
         elif enemyMP >= base:
-            game_state.attempt_spawn(INTERCEPTOR, [7, 6], 1 + int(enemy_support_counter / 3))
-            game_state.attempt_spawn(INTERCEPTOR, [23, 9], 1 + int(enemy_support_counter / 3))
-        elif enemy_support_counter > 0:
-            game_state.attempt_spawn(INTERCEPTOR, [7, 6], 1 + int(enemy_support_counter / 3))
-            game_state.attempt_spawn(INTERCEPTOR, [23, 9], int(enemy_support_counter / 3))
+            interceptor_num = 2 + int(enemy_support_counter / 3)
+        elif enemy_support_counter > 0 and enemyMP >= 5:
+            interceptor_num = 1 + int(enemy_support_counter / 3)
+
+        # if nothing is predicted, spawn both side
+        if len(predicted_attack_directions) == 0:
+            predicted_attack_directions = ["LEFT","RIGHT"]
+
+        interceptor_num = interceptor_num // len(predicted_attack_directions)
+        for dir in predicted_attack_directions:
+            if dir == "LEFT":
+                game_state.attempt_spawn(INTERCEPTOR, [5, 8], interceptor_num)
+            elif dir == "RIGHT":
+                game_state.attempt_spawn(INTERCEPTOR, [22, 8], interceptor_num)
 
         if self.top_right_wall_weak(game_state):
-                game_state.attempt_spawn(INTERCEPTOR, [23, 9], int(enemy_support_counter / 3))
+                game_state.attempt_spawn(INTERCEPTOR, [22, 8], int(enemy_support_counter / 3))
 
     def replaceWall(self, game_state):    
-        allWalls = self.moreWalls + self.firstLineWall
+        allWalls = self.moreWalls 
+        for dir in self.firstLineWall.keys():
+            allWalls += self.firstLineWall[dir]
+
         for [x,y] in allWalls:
             tile = game_state.game_map[x, y]
             if len(tile) > 0:
@@ -214,22 +268,9 @@ class AlgoStrategy(gamelib.AlgoCore):
                     continue
             else:
                 continue
-            currHealth = tile.health 
-            originHealth = tile.max_health 
-            if currHealth/originHealth < 0.5:
+            if tile.health < 40:
                 game_state.attempt_remove([x,y])
-                dirs = [
-                        [1,0],
-                        [0,1],
-                        [0,-1],
-                        [1,1],
-                        [1,-1],
-                        ]
-                # for dir in dirs:
-                #     if [x + dir[0], y + dir[1]] == [5,10]:
-                #         continue
-                #     game_state.attempt_spawn(WALL, [x + dir[0], y + dir[1]])
-
+    
     # or check enemy structure point, if less than 5, send
     def attack(self,game_state):
         # Sending more at once is better since attacks can only hit a single scout at a time
@@ -254,8 +295,6 @@ class AlgoStrategy(gamelib.AlgoCore):
         if numberOfDemolisher <= 5 and numberOfDemolisher * 3 > (game_state.get_resource(MP)):
             return
         
-        # if enemyTowerCount > 0:# and self.portOpened:  
-            # game_state.attempt_spawn(DEMOLISHER, self.portToOpen, numberOfDemolisher)
 
         if enemyTowerCount == 0 and enemyWallCount > 0 and game_state.get_resource(MP) >= 9.0:
             game_state.attempt_spawn(DEMOLISHER, [14, 0], 1)
@@ -296,20 +335,29 @@ class AlgoStrategy(gamelib.AlgoCore):
         return counter
 
     def check_potential_enemy_attack(self, game_state):
-        if (len(game_state.game_map[1,14]) > 0 and game_state.game_map[1,14][0].pending_removal) or \
-            (len(game_state.game_map[2,14]) > 0 and game_state.game_map[2,14][0].pending_removal):
+        predicted_attack_directions = []
+        if (1,14) in self.enemy_append_removal_unit or (2,14) in self.enemy_append_removal_unit:
             game_state.attempt_remove([[1,13],[2,13]])
-            self.portToOpen.append([1,13])
-            self.portToOpen.append([2,13])
-            self.portOpened = True
+            self.removeWall(game_state, [[1,13],[2,13]])
+            predicted_attack_directions.append("LEFT")
 
-        if (len(game_state.game_map[25,14]) > 0 and game_state.game_map[25,14][0].pending_removal) or \
-            (len(game_state.game_map[26,14]) > 0 and game_state.game_map[26,14][0].pending_removal):
+        if (25,14) in self.enemy_append_removal_unit or (26,14) in self.enemy_append_removal_unit:
             game_state.attempt_remove([[25,13],[26,13]])
-            self.portToOpen.append([25,13])
-            self.portToOpen.append([26,13])
-            self.portOpened = True
-   
+            self.removeWall(game_state, [[25,13],[26,13]])
+            predicted_attack_directions.append("RIGHT")
+
+        return predicted_attack_directions
+
+
+    def on_action_frame(self, turn_string):
+        frame_data = json.loads(turn_string)
+        p2_units = frame_data["p2Units"]
+        for unit in p2_units[6]:
+            x = unit[0]
+            y = unit[1]
+            self.enemy_append_removal_unit.add((x,y))
+                
+
 
 if __name__ == "__main__":
     algo = AlgoStrategy()

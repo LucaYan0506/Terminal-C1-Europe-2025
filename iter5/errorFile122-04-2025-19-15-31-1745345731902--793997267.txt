@@ -1,0 +1,4098 @@
+---------------- Starting Your Algo --------------------
+tile: Friendly FF, health: 10.0 location: [24, 13] removal:  upgrade: False
+hp: 0.16666666666666666
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 40.0 location: [23, 12] removal:  upgrade: True
+hp: 0.3333333333333333
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 40.0 location: [23, 12] removal:  upgrade: True
+hp: 0.3333333333333333
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 40.0 location: [23, 12] removal:  upgrade: True
+hp: 0.3333333333333333
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 40.0 location: [23, 12] removal:  upgrade: True
+hp: 0.3333333333333333
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 40.0 location: [23, 12] removal:  upgrade: True
+hp: 0.3333333333333333
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 40.0 location: [23, 12] removal:  upgrade: True
+hp: 0.3333333333333333
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [22, 11] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 22.0 location: [24, 10] removal:  upgrade: False
+hp: 0.36666666666666664
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [22, 11] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 22.0 location: [24, 10] removal:  upgrade: False
+hp: 0.36666666666666664
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [22, 11] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 22.0 location: [24, 10] removal:  upgrade: False
+hp: 0.36666666666666664
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [22, 11] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 22.0 location: [24, 10] removal:  upgrade: False
+hp: 0.36666666666666664
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [22, 11] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 22.0 location: [24, 10] removal:  upgrade: False
+hp: 0.36666666666666664
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [22, 11] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 22.0 location: [24, 10] removal:  upgrade: False
+hp: 0.36666666666666664
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [22, 11] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 22.0 location: [24, 10] removal:  upgrade: False
+hp: 0.36666666666666664
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 13] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 13] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 13] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 13] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 13] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 13] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 13] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 13] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 13] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 58.0 location: [1, 12] removal:  upgrade: True
+hp: 0.48333333333333334
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 58.0 location: [1, 12] removal:  upgrade: True
+hp: 0.48333333333333334
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 58.0 location: [1, 12] removal:  upgrade: True
+hp: 0.48333333333333334
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 58.0 location: [1, 12] removal:  upgrade: True
+hp: 0.48333333333333334
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 58.0 location: [1, 12] removal:  upgrade: True
+hp: 0.48333333333333334
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 58.0 location: [1, 12] removal:  upgrade: True
+hp: 0.48333333333333334
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 58.0 location: [1, 12] removal:  upgrade: True
+hp: 0.48333333333333334
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 58.0 location: [1, 12] removal:  upgrade: True
+hp: 0.48333333333333334
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 58.0 location: [1, 12] removal:  upgrade: True
+hp: 0.48333333333333334
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 58.0 location: [1, 12] removal:  upgrade: True
+hp: 0.48333333333333334
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 10] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 10] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 10] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 10] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 10] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 10] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 10] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 10] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 10] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 10] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 10] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 54.0 location: [3, 10] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [1, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [3, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 4.0 location: [25, 13] removal:  upgrade: False
+hp: 0.06666666666666667
+tile: Friendly FF, health: 12.0 location: [24, 10] removal:  upgrade: False
+hp: 0.2
+tile: Friendly FF, health: 60.0 location: [8, 9] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [7, 10] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [6, 11] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [5, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [22, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 60.0 location: [0, 13] removal:  upgrade: True
+hp: 0.5
+tile: Friendly FF, health: 42.0 location: [3, 13] removal:  upgrade: True
+hp: 0.35
+tile: Friendly FF, health: 54.0 location: [1, 12] removal:  upgrade: True
+hp: 0.45
+tile: Friendly FF, health: 60.0 location: [23, 12] removal:  upgrade: True
+hp: 0.5
+Got EOF, parent game process must have died, exiting for cleanup

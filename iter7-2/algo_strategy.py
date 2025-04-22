@@ -357,31 +357,26 @@ class AlgoStrategy(gamelib.AlgoCore):
         # Check if the enemy has any border positions without units (to spawn from)
         has_valid_path = False
         all_edges = game_state.game_map.get_edges()
-        enemy_point = [14,27]
-        path = game_state.find_path_to_edge(enemy_point)
-        if path and len(path) > 1:
-            final_position = path[-1]
-            for edge_list in all_edges:
-                if final_position in edge_list:
-                    has_valid_path = True
-                    break
-        if not has_valid_path:
-            return True
+        left_edge = game_state.game_map.get_edge_locations(game_state.game_map.TOP_LEFT)
+        right_edge = game_state.game_map.get_edge_locations(game_state.game_map.TOP_RIGHT)
+        enemy_points = left_edge + right_edge
+
+        for enemy_point in enemy_points:
+            path = game_state.find_path_to_edge(enemy_point)
+            if path and len(path) > 1:
+                final_position = path[-1]
+                for edge_list in all_edges:
+                    if final_position in edge_list:
+                        has_valid_path = True
+                        break
 
        
         # Check if enemy has any walls set for removal
         has_pending_removal = False
         
         # Check both sides of the map for pending removals
-        for y in range(14, game_state.game_map.ARENA_SIZE):
-            for x in range(game_state.game_map.ARENA_SIZE):
-                if game_state.contains_stationary_unit([x, y]):
-                    unit = game_state.game_map[x, y][0]
-                    if unit.player_index == 1 and unit.pending_removal:
-                        has_pending_removal = True
-                        break
-            if has_pending_removal:
-                break
+        if len(self.enemy_append_removal_unit) > 0:
+            has_pending_removal = True
         
         # Also check locations right at the halfway point for our side
         # for x in range(game_state.game_map.ARENA_SIZE):

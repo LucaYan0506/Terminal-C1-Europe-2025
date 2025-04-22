@@ -391,6 +391,43 @@ class AlgoStrategy(gamelib.AlgoCore):
         if is_trapped:
             gamelib.debug_write("Enemy detected as trapped! No open spawn positions and no pending wall removals.")
         return is_trapped
+    
+    def execute_finishing_attack(self, game_state):
+        """
+        If enemy is trapped with no way to spawn or remove units, execute a heavy attack
+        to finish them off
+        """
+        # Build up a heavy attack force with demolishers for structures
+        mp = game_state.get_resource(MP)
+        
+        # First ensure our own defenses are solid
+        self.build_wall(game_state)
+        self.build_tower(game_state)
+        
+        # Launch a coordinated attack with a mix of units
+        demolisher_count = min(5, mp // game_state.type_cost(DEMOLISHER)[MP])
+        mp -= demolisher_count * game_state.type_cost(DEMOLISHER)[MP]
+        
+        # Send demolishers from both sides to destroy their structures
+        if demolisher_count >= 2:
+            left_demo = demolisher_count // 2
+            right_demo = demolisher_count - left_demo
+            
+            # Left side demolishers
+            if left_demo > 0:
+                game_state.attempt_spawn(DEMOLISHER, [3, 10], left_demo)
+                
+            # Right side demolishers
+            if right_demo > 0:
+                game_state.attempt_spawn(DEMOLISHER, [24, 10], right_demo)
+        else:
+            # If only 1 demolisher, send it down the middle
+            game_state.attempt_spawn(DEMOLISHER, [14, 0], demolisher_count)
+        
+        # Use remaining MP for scouts
+        scout_count = mp // game_state.type_cost(SCOUT)[MP]
+        if scout_count > 0:
+            game_state.attempt_spawn(SCOUT, [14, 0], scout_count)
 
 
     def on_action_frame(self, turn_string):

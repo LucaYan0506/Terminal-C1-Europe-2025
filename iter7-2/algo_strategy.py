@@ -459,19 +459,30 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         if attackRight:
             game_state.attempt_remove([[26,12],[26,13]])
-            # self.portToOpen.append([26,13])
-            # self.portOpened = True
+            # check if health of wall at [24,13] is less than 50
+            if game_state.game_map[24,13] and game_state.game_map[24,13][0].unit_type == WALL:
+                if game_state.game_map[24,13][0].health < 50:
+                    game_state.attempt_remove([24,13])
+
             return RIGHT_KAMIKAZE
         else:
             game_state.attempt_remove([[1,12],[1,13],[3,10]])
+            # check if health of wall at [3,13] is less than 50
+            if game_state.game_map[3,13] and game_state.game_map[3,13][0].unit_type == WALL:
+                if game_state.game_map[3,13][0].health < 50:
+                    game_state.attempt_remove([3,13])
 
             return LEFT_KAMIKAZE
 
     def kamikaze_attack(self, game_state):
         if self.kamikaze_attack_location == RIGHT_KAMIKAZE:
+            game_state.attempt_spawn(WALL, [24,13]) # reinforce
+            game_state.attempt_spawn(WALL, [22,13])
             game_state.attempt_spawn(INTERCEPTOR, [24,10], 4)
             game_state.attempt_spawn(SCOUT, [13,0], game_state.number_affordable(SCOUT))
         else:
+            game_state.attempt_spawn(WALL, [3,13])
+            game_state.attempt_spawn(WALL, [4,13])
             game_state.attempt_spawn(INTERCEPTOR, [3,10], 4)
             game_state.attempt_spawn(SCOUT, [14,0], game_state.number_affordable(SCOUT))
 

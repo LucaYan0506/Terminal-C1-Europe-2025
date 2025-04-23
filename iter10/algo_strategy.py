@@ -6,7 +6,6 @@ from sys import maxsize
 import json
 import copy
 
-
 """
 Most of the algo code you write will be in this file unless you create new
 modules yourself. Start by modifying the 'on_turn' function.
@@ -26,7 +25,6 @@ class AlgoStrategy(gamelib.AlgoCore):
         seed = random.randrange(maxsize)
         random.seed(seed)
         # gamelib.debug_write('Random seed: {}'.format(seed))
-
         self.firstLineWall = {
             'LEFT':[[0,13],[3,13],[1,12],[3,10]],
             'MID':[],
@@ -62,13 +60,6 @@ class AlgoStrategy(gamelib.AlgoCore):
         self.will_kamikaze_attack = False
         self.kamikaze_attack_location = 0
         
-        # Tracking for opening prediction accuracy
-        self.opening_predictions = []  # Will store tuples of (turn, prediction, actual_attack_dir)
-        self.last_prediction = 0
-        self.last_actual_attack = 0
-        self.prediction_correct_count = 0
-        self.prediction_total_count = 0
-
     def on_game_start(self, config):
         """ 
         Read in config and perform any initial setup here 
@@ -101,9 +92,6 @@ class AlgoStrategy(gamelib.AlgoCore):
         # gamelib.debug_write('Performing turn {} of your custom algo strategy'.format(game_state.turn_number))
         game_state.suppress_warnings(True)  #Comment or remove this line to enable warnings.
 
-        # Use predict_opening to analyze enemy layout
-        
-
         if game_state.turn_number < 1:
             self.early_game(game_state)
         else:
@@ -129,10 +117,21 @@ class AlgoStrategy(gamelib.AlgoCore):
         For offense we will use long range demolishers if they place stationary units near the enemy's front.
         If there are no stationary units to attack in the front, we will send Scouts to try and score quickly.
         """
-
         if not self.firstLineWallIsFull(game_state):
             self.will_kamikaze_attack = False
             self.kamikaze_attack_location = 0
+            # if we have more than 15MP
+            if game_state.get_resource(MP) > 15 and game_state.get_resource(SP) < 9:
+                dirToAttack = self.plan_kamikaze_attack(game_state)
+                # opposite side of the kamikaze attack coz it returns weaker side
+                if dirToAttack == RIGHT_KAMIKAZE:
+                    game_state.attempt_remove([3,10])
+                    game_state.attempt_spawn(DEMOLISHER, [3,10], 4)
+                    game_state.attempt_spawn(SCOUT, [14,0], 1000)
+                elif dirToAttack == LEFT_KAMIKAZE:
+                    game_state.attempt_remove([24,10])
+                    game_state.attempt_spawn(DEMOLISHER, [24,10], 4)
+                    game_state.attempt_spawn(SCOUT, [13,0], 1000)
 
         if self.will_kamikaze_attack:
             if self.kamikaze_attack_location == LEFT_KAMIKAZE:
@@ -150,38 +149,10 @@ class AlgoStrategy(gamelib.AlgoCore):
 
             game_state.attempt_spawn(TURRET, [[26,12]])
 
-            # Use both traditional attack detection and opening prediction
-            predicted_attack_directions = self.check_potential_enemy_attack(game_state)
-
-
-            opening_prediction = self.predict_opening(game_state)
-            self.last_prediction = opening_prediction
-            
-            if opening_prediction != 0:
-                direction = "LEFT" if opening_prediction == -1 else "RIGHT"
-                predicted_attack_directions.append(direction)
-                
-                gamelib.debug_write(f"Turn {game_state.turn_number}: Predicted enemy attack from {direction} side based on opening analysis")
-            
-            # Log prediction accuracy if we have enough data
-            if self.prediction_total_count >= 5:
-                accuracy = self.prediction_correct_count / self.prediction_total_count
-                gamelib.debug_write(f"Current opening prediction accuracy: {accuracy:.2f}")
-            
-            # Use opening prediction if traditional method didn't find anything
-            # if not predicted_attack_directions and game_state.turn_number >= 3:
-            #     opening_prediction = self.predict_opening(game_state)
-            #     if opening_prediction == -1:
-            #         predicted_attack_directions.append("LEFT")
-            #         gamelib.debug_write("Reinforcing LEFT side based on opening prediction")
-            #     elif opening_prediction == 1:
-            #         predicted_attack_directions.append("RIGHT")
-            #         gamelib.debug_write("Reinforcing RIGHT side based on opening prediction")
-            
-            # Handle right side attack detection
+            predicted_attack_directions = self.predict_attack_side(game_state)
             if "RIGHT" in predicted_attack_directions:
-                game_state.attempt_spawn(TURRET, [[22,11],[21,10],[20,9],[23,9]])
-                self.turret_locations['RIGHT'] += [[22,11],[21,10],[20,9],[23,9]]
+                game_state.attempt_spawn(TURRET, [[22,11],[21,10],[20,9],[25,11],[23,9]])
+                self.turret_locations['RIGHT'] += [[22,11],[21,10],[20,9],[25,11],[23,9]]
                 
                 self.removeWall(game_state,[[20,9],[21,10]])
                 self.removeWall(game_state, [[25,13],[26,13]])
@@ -195,32 +166,15 @@ class AlgoStrategy(gamelib.AlgoCore):
                 for wall in newWall:
                     if wall not in self.moreWalls:
                         self.moreWalls.append(wall)
+            if self.detect_enemy_trapped(game_state):
+                predicted_attack_directions = ['TRAPPED']
 
-                self.removeWall(game_state, [[24,13]])
-            
-            # Handle left side attack detection
-            # if "LEFT" in predicted_attack_directions:
-            #     game_state.attempt_spawn(TURRET, [[6,13],[6,12],[2,13]])
-            #     # Add to turret locations if not already there
-            #     for loc in [[6,13],[6,12],[2,13]]:
-            #         if loc not in self.turret_locations['LEFT']:
-            #             self.turret_locations['LEFT'].append(loc)
-                
-            #     # Strengthen left wall
-            #     newWall = [[1,12],[1,13]]
-            #     for wall in newWall:
-            #         if wall not in self.firstLineWall['LEFT']:
-            #             self.firstLineWall['LEFT'].append(wall)
-
-            # Build and update defenses
             self.build_tower(game_state, predicted_attack_directions)
             self.build_wall(game_state, predicted_attack_directions)
             self.build_support(game_state)
             game_state.attempt_spawn(WALL, self.moreWalls)
             game_state.attempt_upgrade(self.moreWalls)
 
-            # Dynamically adjust defenses based on changing attack patterns
-            # self.adjust_defenses_dynamically(game_state)
 
             self.update_tower(game_state, predicted_attack_directions)
             self.update_wall(game_state, predicted_attack_directions)
@@ -232,7 +186,7 @@ class AlgoStrategy(gamelib.AlgoCore):
             self.will_kamikaze_attack = True
             self.kamikaze_attack_location = self.plan_kamikaze_attack(game_state)
         else:
-            # replace wall only when we are not planning to attack
+            # replace wall only when we are not plannign to attack
             self.replaceWall(game_state)
 
         for x, y in self.moreSupportLocations:
@@ -240,19 +194,10 @@ class AlgoStrategy(gamelib.AlgoCore):
             game_state.attempt_upgrade([x,y])
 
     def build_tower(self, game_state, predicted_attack_directions = []):
-        # If no attack directions predicted and not in early game, use opening prediction
-        if not predicted_attack_directions and game_state.turn_number >= 3:
-            opening_prediction = self.predict_opening(game_state)
-            if opening_prediction == -1:
-                predicted_attack_directions = ["LEFT"]
-                gamelib.debug_write("Building towers on LEFT based on opening prediction")
-            elif opening_prediction == 1:
-                predicted_attack_directions = ["RIGHT"]
-                gamelib.debug_write("Building towers on RIGHT based on opening prediction")
-
         # build turret where we predict an attack to happen first
         for dir in predicted_attack_directions:
-            game_state.attempt_spawn(TURRET, self.turret_locations[dir])
+            if dir in self.turret_locations.keys():
+                game_state.attempt_spawn(TURRET, self.turret_locations[dir])
 
         # build the rest
         for dir in self.turret_locations.keys():
@@ -289,20 +234,14 @@ class AlgoStrategy(gamelib.AlgoCore):
                 if wall not in self.moreWalls:
                     self.moreWalls.append(wall)
 
-        # If no attack directions predicted and not in early game, use opening prediction
-        if not predicted_attack_directions and game_state.turn_number >= 3:
-            opening_prediction = self.predict_opening(game_state)
-            if opening_prediction == -1:
-                predicted_attack_directions = ["LEFT"]
-            elif opening_prediction == 1:
-                predicted_attack_directions = ["RIGHT"]
 
         # build turret where we predict an attack to happen first
         for dir in predicted_attack_directions:
-            game_state.attempt_spawn(WALL, self.firstLineWall[dir])
+            if dir in self.firstLineWall.keys():
+                game_state.attempt_spawn(WALL, self.firstLineWall[dir])
 
         # build the rest
-        for dir in self.firstLineWall.keys():
+        for dir in self.turret_locations.keys():
             if dir not in predicted_attack_directions:
                 game_state.attempt_spawn(WALL, self.firstLineWall[dir])
 
@@ -315,7 +254,6 @@ class AlgoStrategy(gamelib.AlgoCore):
                         self.firstLineWall[dir].remove(wall)
                 if wall in self.moreWalls:
                         self.moreWalls.remove(wall)
-
     def top_right_wall_weak(self, game_state):
         top_right_wall = [[24,13],[23,12],[22,11]]
         for [x,y] in top_right_wall:
@@ -332,7 +270,8 @@ class AlgoStrategy(gamelib.AlgoCore):
     def update_wall(self, game_state, predicted_attack_directions = []):
         # upgrade wall where we predict an attack to happen first
         for dir in predicted_attack_directions:
-            game_state.attempt_upgrade(self.firstLineWall[dir])
+            if dir in self.firstLineWall.keys():
+                game_state.attempt_upgrade(self.firstLineWall[dir])
 
         # upgrade the rest
         for dir in self.firstLineWall.keys():
@@ -345,7 +284,8 @@ class AlgoStrategy(gamelib.AlgoCore):
     def update_tower(self, game_state, predicted_attack_directions = []):
         # upgrade turret where we predict an attack to happen first
         for dir in predicted_attack_directions:
-            game_state.attempt_upgrade(self.turret_locations[dir])
+            if dir in self.turret_locations.keys():
+                game_state.attempt_upgrade(self.turret_locations[dir])
 
         # upgrade the rest
         for dir in self.turret_locations.keys():
@@ -353,14 +293,15 @@ class AlgoStrategy(gamelib.AlgoCore):
                 game_state.attempt_upgrade(self.turret_locations[dir])
 
     def spawnInterceptor(self, game_state, predicted_attack_directions):
+        if "TRAPPED" in predicted_attack_directions:
+            return
+
         enemyMP = game_state.get_resource(MP,1)
         # gamelib.debug_write('enemyMP {}'.format(enemyMP))
         base = 7.0
 
         enemy_support_counter = min(self.count_enemy_support(game_state),6)
         
-        gamelib.debug_write("Turn: {}".format(game_state.turn_number))
-        gamelib.debug_write("support: {}".format(self.count_enemy_support(game_state)))
         interceptor_num = 0
         if enemyMP >= base + 8.0:
             interceptor_num = 5 + int(enemy_support_counter / 3)
@@ -374,39 +315,19 @@ class AlgoStrategy(gamelib.AlgoCore):
         elif enemy_support_counter > 0 and enemyMP >= 5:
             interceptor_num = 1 + int(enemy_support_counter / 3)
 
-        # if nothing is predicted by traditional methods, check opening prediction
-        if len(predicted_attack_directions) == 0 and game_state.turn_number >= 3:
-            opening_prediction = self.predict_opening(game_state)
-            if opening_prediction == -1:
-                predicted_attack_directions = ["LEFT"]
-                gamelib.debug_write("Spawning interceptors on LEFT based on opening analysis")
-            elif opening_prediction == 1:
-                predicted_attack_directions = ["RIGHT"]
-                gamelib.debug_write("Spawning interceptors on RIGHT based on opening analysis")
-            else:
-                # If still no prediction, spawn on both sides
-                predicted_attack_directions = ["LEFT", "RIGHT"]
-        elif len(predicted_attack_directions) == 0:
-            # Default to both sides if we don't have a prediction and early in game
-            predicted_attack_directions = ["LEFT", "RIGHT"]
-        
-        # Calculate interceptors per side
-        interceptor_num = max(interceptor_num // len(predicted_attack_directions), 1)
-        
-        # Deploy interceptors based on predictions
+        # if nothing is predicted, spawn both side
+        if len(predicted_attack_directions) == 0:
+            predicted_attack_directions = ["LEFT","RIGHT"]
+
+        interceptor_num = interceptor_num // len(predicted_attack_directions)
         for dir in predicted_attack_directions:
             if dir == "LEFT":
-                game_state.attempt_spawn(INTERCEPTOR, [5, 8], interceptor_num//2)
-                game_state.attempt_spawn(INTERCEPTOR, [7, 6], interceptor_num//2)
+                game_state.attempt_spawn(INTERCEPTOR, [5, 8], interceptor_num)
             elif dir == "RIGHT":
-                game_state.attempt_spawn(INTERCEPTOR, [22, 8], interceptor_num//2)
-                game_state.attempt_spawn(INTERCEPTOR, [20, 6], interceptor_num//2)
+                game_state.attempt_spawn(INTERCEPTOR, [22, 8], interceptor_num)
 
-        # If right wall is weak, add extra interceptors on that side regardless of prediction
         if self.top_right_wall_weak(game_state):
-            extra_interceptors = int(enemy_support_counter / 3) + 1
-            game_state.attempt_spawn(INTERCEPTOR, [22, 8], extra_interceptors)
-            gamelib.debug_write(f"Added {extra_interceptors} extra interceptors on RIGHT due to weak wall")
+                game_state.attempt_spawn(INTERCEPTOR, [22, 8], int(enemy_support_counter / 3))
 
     def replaceWall(self, game_state):    
         allWalls = copy.deepcopy(self.moreWalls) 
@@ -456,8 +377,6 @@ class AlgoStrategy(gamelib.AlgoCore):
 
     def check_potential_enemy_attack(self, game_state):
         predicted_attack_directions = []
-        
-        # Check based on wall removals (traditional method)
         if (1,14) in self.enemy_append_removal_unit or (2,14) in self.enemy_append_removal_unit:
             game_state.attempt_remove([[1,13],[2,13]])
             self.removeWall(game_state, [[1,13],[2,13]])
@@ -467,130 +386,22 @@ class AlgoStrategy(gamelib.AlgoCore):
             game_state.attempt_remove([[25,13],[26,13]])
             self.removeWall(game_state, [[25,13],[26,13]])
             predicted_attack_directions.append("RIGHT")
-        
-        # If we didn't detect removals but have observed the game for a few turns,
-        # use opening prediction as a backup
-        if not predicted_attack_directions and game_state.turn_number >= 3:
-            opening_prediction = self.predict_opening(game_state)
-            if opening_prediction != 0:  # If there's a clear prediction
-                if opening_prediction == -1:
-                    predicted_attack_directions.append("LEFT")
-                else:
-                    predicted_attack_directions.append("RIGHT")
-                gamelib.debug_write(f"Using opening prediction: {opening_prediction}")
 
         return predicted_attack_directions
-
-
-    def on_action_frame(self, turn_string):
-        frame_data = json.loads(turn_string)
-        p2_units = frame_data["p2Units"]
-        
-        # Track removals
-        for unit in p2_units[6]:
-            x = unit[0]
-            y = unit[1]
-            self.enemy_append_removal_unit.add((x,y))
-        
-        # Track enemy attack directions for prediction accuracy
-        left_attack = False
-        right_attack = False
-        
-        # Look for enemy mobile units (SCOUT=3, DEMOLISHER=4, INTERCEPTOR=5)
-        for unit_type in ["3", "4", "5"]:
-            if unit_type in p2_units:
-                for unit in p2_units[unit_type]:
-                    x, y = unit[0], unit[1]
-                    if y >= 14:  # Near our side
-                        if x < 14:
-                            left_attack = True
-                        else:
-                            right_attack = True
-        
-        # Record the actual attack direction
-        if left_attack and right_attack:
-            actual_attack = 0  # both sides
-        elif left_attack:
-            actual_attack = -1  # left side
-        elif right_attack:
-            actual_attack = 1  # right side
-        else:
-            actual_attack = 0  # no attack
-        
-        # Update tracking of prediction accuracy
-        if self.last_prediction != 0 and actual_attack != 0:
-            self.last_actual_attack = actual_attack
-            self.prediction_total_count += 1
-            
-            # Check if prediction was correct
-            if (self.last_prediction < 0 and actual_attack < 0) or (self.last_prediction > 0 and actual_attack > 0):
-                self.prediction_correct_count += 1
-                if self.prediction_total_count % 5 == 0:
-                    accuracy = self.prediction_correct_count / self.prediction_total_count
-                    gamelib.debug_write(f"Opening prediction accuracy: {accuracy:.2f} ({self.prediction_correct_count}/{self.prediction_total_count})")
-
-    def plan_kamikaze_attack(self, game_state) -> int:
-        # Use opening prediction to help determine attack side
-        opening_prediction = self.predict_opening(game_state)
-        
-        # By default, check weak points
-        attackRight = True
-        rightScore = 0
-        leftScore = 0
-        
-        # Check number of enemy structures on each side
-        for [x,y] in self.right_kamikaze_attack_locations:
-            if game_state.contains_stationary_unit([x,y]):
-                rightScore += 1
-        for [x,y] in self.left_kamikaze_attack_locations:
-            if game_state.contains_stationary_unit([x,y]):
-                leftScore += 1
-        
-        # If opening prediction suggests a side attack, give it more weight
-        if opening_prediction != 0:
-            if opening_prediction == -1:  # Enemy likely to attack left
-                # Attack where enemy is weaker (their right, our left)
-                leftScore -= 3  # Lower score means more favorable to attack
-                gamelib.debug_write("Opening prediction favors attacking LEFT")
-            else:  # Enemy likely to attack right
-                # Attack where enemy is weaker (their left, our right)
-                rightScore -= 3
-                gamelib.debug_write("Opening prediction favors attacking RIGHT")
-        
-        # Compare scores and decide
-        if rightScore < leftScore:
-            attackRight = True
-            gamelib.debug_write(f"Attacking RIGHT side (scores: Right={rightScore}, Left={leftScore})")
-        else:
-            attackRight = False
-            gamelib.debug_write(f"Attacking LEFT side (scores: Right={rightScore}, Left={leftScore})")
-
-        if attackRight:
-            game_state.attempt_remove([[26,12],[26,13], [24,10]])
-            return RIGHT_KAMIKAZE
-        else:
-            game_state.attempt_remove([[1,12],[1,13],[3,10]])
-            return LEFT_KAMIKAZE
-
-    def kamikaze_attack(self, game_state):
-        if self.kamikaze_attack_location == RIGHT_KAMIKAZE:
-            game_state.attempt_spawn(INTERCEPTOR, [24,10], 4)
-            game_state.attempt_spawn(SCOUT, [13,0], game_state.number_affordable(SCOUT))
-        else:
-            game_state.attempt_spawn(INTERCEPTOR, [3,10], 4)
-            game_state.attempt_spawn(SCOUT, [14,0], game_state.number_affordable(SCOUT))
-
-        if game_state.game_map[4,12] and game_state.game_map[4,12][0].unit_type == WALL:
-                game_state.attempt_remove([4,12])
-        
     
-    def predict_opening(self, game_state):
+    def predict_attack_side(self, game_state):
         """
         Looks at opponent layout to determine which side attacks will most likely come from.
         Returns -1 for left side, 1 for right side, and 0 if unknown/equally likely
         """
-        left_edges = game_state.game_map.get_edge_locations(game_state.game_map.TOP_LEFT)
-        right_edges = game_state.game_map.get_edge_locations(game_state.game_map.TOP_RIGHT)
+        newAns = {
+            -1: ['LEFT'],
+            0: ['LEFT','RIGHT'],
+            1: ['RIGHT'],
+        }
+
+        left_edges = [(13 - i, 27 - i) for i in range(14)]
+        right_edges = [(i + 14, 27 - i) for i in range(14)]
 
         left_exit_side = 0
         right_exit_side = 0
@@ -612,13 +423,11 @@ class AlgoStrategy(gamelib.AlgoCore):
                         if y == game_state.game_map.HALF_ARENA:
                             right_exit_side = -1 if x < game_state.HALF_ARENA else 1
                             break
-    
 
         # if both left + right edges exit to the same side
         # or if exactly one edge does not exit we are done
         if left_exit_side == right_exit_side and left_exit_side + right_exit_side != 0:
-            return left_exit_side if left_exit_side != 0 else right_exit_side
-        
+            return newAns[left_exit_side] if left_exit_side != 0 else newAns[right_exit_side]
 
         # otherwise: sum structure costs of both sides and compare; if there is
         # a large difference the more expensive side is more likely to attack
@@ -636,9 +445,9 @@ class AlgoStrategy(gamelib.AlgoCore):
                 right_price += unit.cost[game_state.SP]
 
         if left_price >= right_price + 10:
-            return -1
+            return newAns[1]
         elif right_price >= left_price + 10:
-            return 1
+            return newAns[-1]
 
         # last resort: follow the structures along the corners and check symmetry
         left_corner = [(x, 14) for x in range(14)]
@@ -648,101 +457,171 @@ class AlgoStrategy(gamelib.AlgoCore):
             left_struct = game_state.game_map[lx, ly][0] if game_state.game_map[lx, ly] else None
             right_struct = game_state.game_map[rx, ry][0] if game_state.game_map[rx, ry] else None
             if left_struct is None and right_struct is None:
-                return 0
+                return newAns[0]
             if left_struct is None and right_struct is not None:
-                return -1
+                return newAns[-1]
             if left_struct is not None and right_struct is None:
-                return 1
+                return newAns[1]
             if not left_struct.upgraded and right_struct.upgraded:
-                return -1
+                return newAns[-1]
             if left_struct.upgraded and not right_struct.upgraded:
-                return 1
-            if left_struct in self.enemy_append_removal_unit and not right_struct in self.enemy_append_removal_unit:
-                return -1
-            if not left_struct in self.enemy_append_removal_unit and right_struct in self.enemy_append_removal_unit:
-                return 1
+                return newAns[1]
+            if left_struct.pending_removal and not right_struct.pending_removal:
+                return newAns[-1]
+            if not left_struct.pending_removal and right_struct.pending_removal:
+                return newAns[1]
 
         # theoretically possible to reach this code (if top edge is perfectly symmetrical with no holes)
         # but in practice will probably never happen
-        return 0
-        
-    def adjust_defenses_dynamically(self, game_state):
+        return newAns[0]
+    
+    def detect_enemy_trapped(self, game_state):
         """
-        Dynamically adjusts defense strategy based on the current state of the game
-        and predictions about enemy attack patterns
+        Detect if the enemy has no position to send units from and no pending wall removals
+        Returns True if enemy is detected to be trapped, False otherwise
         """
-        # Only run this adjustment after a few turns to gather enough data
-        if game_state.turn_number < 5:
-            return
+        # Check if the enemy has any border positions without units (to spawn from)
+        has_valid_path = False
+        all_edges = game_state.game_map.get_edges()
+        left_edge = game_state.game_map.get_edge_locations(game_state.game_map.TOP_LEFT)
+        right_edge = game_state.game_map.get_edge_locations(game_state.game_map.TOP_RIGHT)
+        enemy_points = left_edge + right_edge
+
+        for enemy_point in enemy_points:
+            path = game_state.find_path_to_edge(enemy_point)
+            if path and len(path) > 1:
+                final_position = path[-1]
+                for edge_list in all_edges:
+                    if final_position in edge_list:
+                        has_valid_path = True
+                        break
+
+       
+        # Check if enemy has any walls set for removal
+        has_pending_removal = False
         
-        # Use opening prediction to detect likely attack direction
-        opening_prediction = self.predict_opening(game_state)
+        # Check both sides of the map for pending removals
+        if len(self.enemy_append_removal_unit) > 0:
+            has_pending_removal = True
         
-        # Count existing defenses on each side
-        left_defense_count = 0
-        right_defense_count = 0
+        # Also check locations right at the halfway point for our side
+        # for x in range(game_state.game_map.ARENA_SIZE):
+        #     if game_state.contains_stationary_unit([x, 13]):
+        #         unit = game_state.game_map[x, 13][0]
+        #         if unit.player_index == 0 and unit.pending_removal:
+        #             has_pending_removal = True
+        #             break
         
-        # Define defense regions
-        left_region = [(x,y) for x in range(0,10) for y in range(8,14)]
-        right_region = [(x,y) for x in range(18,28) for y in range(8,14)]
+        # Enemy is trapped if they have no spawn positions and no pending removals
+        is_trapped = not has_valid_path and not has_pending_removal
+        # if is_trapped:
+            # gamelib.debug_write("Enemy detected as trapped! No open spawn positions and no pending wall removals.")
+        return is_trapped
+    
+    def execute_finishing_attack(self, game_state):
+        """
+        If enemy is trapped with no way to spawn or remove units, execute a heavy attack
+        to finish them off
+        """
+        # Build up a heavy attack force with demolishers for structures
+        mp = game_state.get_resource(MP)
         
-        # Count turrets and walls on each side
-        for x,y in left_region:
-            if game_state.contains_stationary_unit([x,y]):
-                unit = game_state.game_map[x,y][0]
-                if unit.player_index == 0 and unit.unit_type in [WALL, TURRET]:
-                    left_defense_count += 1
-                
-        for x,y in right_region:
-            if game_state.contains_stationary_unit([x,y]):
-                unit = game_state.game_map[x,y][0]
-                if unit.player_index == 0 and unit.unit_type in [WALL, TURRET]:
-                    right_defense_count += 1
+        # First ensure our own defenses are solid
+        self.build_wall(game_state)
+        self.build_tower(game_state)
         
-        # Determine imbalance in defenses
-        imbalance = abs(left_defense_count - right_defense_count)
+        # Launch a coordinated attack with a mix of units
+        demolisher_count = min(5, mp // game_state.type_cost(DEMOLISHER)[MP])
+        mp -= demolisher_count * game_state.type_cost(DEMOLISHER)[MP]
         
-        # If significant imbalance exists (more than 5 units difference)
-        if imbalance > 5:
-            # If we have more defenses on left but prediction suggests right attack
-            if left_defense_count > right_defense_count and opening_prediction == 1:
-                gamelib.debug_write(f"Defense imbalance detected: LEFT={left_defense_count}, RIGHT={right_defense_count}")
-                gamelib.debug_write("Reinforcing RIGHT side based on opening prediction")
-                
-                # Add turrets to right side
-                additional_turrets = [[22,12], [21,12]]
-                for turret_loc in additional_turrets:
-                    game_state.attempt_spawn(TURRET, [turret_loc])
-                    if turret_loc not in self.turret_locations['RIGHT']:
-                        self.turret_locations['RIGHT'].append(turret_loc)
+        # Send demolishers from both sides to destroy their structures
+        if demolisher_count >= 2:
+            left_demo = demolisher_count // 2
+            right_demo = demolisher_count - left_demo
             
-            # If we have more defenses on right but prediction suggests left attack
-            elif right_defense_count > left_defense_count and opening_prediction == -1:
-                gamelib.debug_write(f"Defense imbalance detected: LEFT={left_defense_count}, RIGHT={right_defense_count}")
-                gamelib.debug_write("Reinforcing LEFT side based on opening prediction")
+            # Left side demolishers
+            if left_demo > 0:
+                game_state.attempt_spawn(DEMOLISHER, [3, 10], left_demo)
                 
-                # Add turrets to left side
-                additional_turrets = [[3,11], [4,10], [5,9]]
-                for turret_loc in additional_turrets:
-                    game_state.attempt_spawn(TURRET, [turret_loc])
-                    if turret_loc not in self.turret_locations['LEFT']:
-                        self.turret_locations['LEFT'].append(turret_loc)
+            # Right side demolishers
+            if right_demo > 0:
+                game_state.attempt_spawn(DEMOLISHER, [24, 10], right_demo)
+        else:
+            # If only 1 demolisher, send it down the middle
+            game_state.attempt_spawn(DEMOLISHER, [14, 0], demolisher_count)
         
-        # Check if enemy's attack pattern has changed from previous observations
-        # by looking at recent wall removals
-        if game_state.turn_number > 10:
-            recent_left_removals = sum(1 for x,y in self.enemy_append_removal_unit if x < 14 and y >= 13)
-            recent_right_removals = sum(1 for x,y in self.enemy_append_removal_unit if x >= 14 and y >= 13)
-            
-            # If removals indicate a shift in attack pattern
-            if recent_left_removals > recent_right_removals + 2:
-                gamelib.debug_write(f"Attack pattern shift detected: More recent removals on LEFT ({recent_left_removals} vs {recent_right_removals})")
-                # Strengthen left defenses
-                game_state.attempt_spawn(TURRET, [[3,12], [2,13]])
-            elif recent_right_removals > recent_left_removals + 2:
-                gamelib.debug_write(f"Attack pattern shift detected: More recent removals on RIGHT ({recent_right_removals} vs {recent_left_removals})")
-                # Strengthen right defenses
-                game_state.attempt_spawn(TURRET, [[24,12], [25,11]])
+        # Use remaining MP for scouts
+        scout_count = mp // game_state.type_cost(SCOUT)[MP]
+        if scout_count > 0:
+            game_state.attempt_spawn(SCOUT, [14, 0], scout_count)
+
+
+    def on_action_frame(self, turn_string):
+        frame_data = json.loads(turn_string)
+        p2_units = frame_data["p2Units"]
+        for unit in p2_units[6]:
+            x = unit[0]
+            y = unit[1]
+            self.enemy_append_removal_unit.add((x,y))
+                
+
+    def plan_kamikaze_attack(self, game_state) -> int:
+        # check if enemy has a turret on the top right corner
+        attackRight = True
+        # determine if there are weak points on the right side
+        rightScore = 0
+        leftScore = 0
+        for [x,y] in self.right_kamikaze_attack_locations:
+            if game_state.contains_stationary_unit([x,y]):
+                rightScore += 1
+        for [x,y] in self.left_kamikaze_attack_locations:
+            if game_state.contains_stationary_unit([x,y]):
+                leftScore += 1
+
+        if rightScore < leftScore:
+            attackRight = True
+        else:
+            attackRight = False
+
+        if attackRight:
+            game_state.attempt_remove([[26,12],[26,13], [24,10]])
+            # check if health of wall at [24,13] is less than 50
+            if game_state.game_map[24,13] and game_state.game_map[24,13][0].unit_type == WALL:
+                if game_state.game_map[24,13][0].health < 50:
+                    game_state.attempt_remove([24,13])
+
+            return RIGHT_KAMIKAZE
+        else:
+            game_state.attempt_remove([[1,12],[1,13],[3,10]])
+            # check if health of wall at [3,13] is less than 50
+            if game_state.game_map[3,13] and game_state.game_map[3,13][0].unit_type == WALL:
+                if game_state.game_map[3,13][0].health < 50:
+                    game_state.attempt_remove([3,13])
+
+            return LEFT_KAMIKAZE
+
+    def kamikaze_attack(self, game_state):
+        if self.kamikaze_attack_location == RIGHT_KAMIKAZE:
+            game_state.attempt_spawn(WALL, [5,9]) # block the left side
+            game_state.attempt_remove([5,9])
+
+            game_state.attempt_spawn(WALL, [24,13]) # reinforce
+            game_state.attempt_spawn(WALL, [22,13])
+            game_state.attempt_spawn(INTERCEPTOR, [24,10], 4)
+            game_state.attempt_spawn(SCOUT, [13,0], game_state.number_affordable(SCOUT))
+        else:
+            game_state.attempt_spawn(WALL, [22,9]) # block the left side
+            game_state.attempt_remove([22,9])
+
+            game_state.attempt_spawn(WALL, [3,13])
+            game_state.attempt_spawn(WALL, [4,13])
+            game_state.attempt_spawn(INTERCEPTOR, [3,10], 4)
+            game_state.attempt_spawn(SCOUT, [14,0], game_state.number_affordable(SCOUT))
+
+        if game_state.game_map[4,12] and game_state.game_map[4,12][0].unit_type == WALL:
+                game_state.attempt_remove([4,12])
+        
+   
 
 if __name__ == "__main__":
     algo = AlgoStrategy()

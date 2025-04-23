@@ -1,0 +1,12 @@
+---------------- Starting Your Algo --------------------
+Turn: 1
+support: 0
+Turn: 2
+support: 0
+Turn: 3
+support: 0
+Turn: 4
+support: 0
+Turn: 5
+support: 0
+Got EOF, parent game process must have died, exiting for cleanup

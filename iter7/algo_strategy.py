@@ -4,6 +4,7 @@ import math
 import warnings
 from sys import maxsize
 import json
+import copy
 
 
 """
@@ -139,6 +140,23 @@ class AlgoStrategy(gamelib.AlgoCore):
             game_state.attempt_spawn(TURRET, [[26,12]])
 
             predicted_attack_directions = self.check_potential_enemy_attack(game_state)
+            if "RIGHT" in predicted_attack_directions:
+                game_state.attempt_spawn(TURRET, [[22,11],[21,10],[20,9],[25,11],[23,9]])
+                self.turret_locations['RIGHT'] += [[22,11],[21,10],[20,9],[25,11],[23,9]]
+                
+                self.removeWall(game_state,[[20,9],[21,10]])
+                self.removeWall(game_state, [[25,13],[26,13]])
+
+                newWall = [[24,10],[26,12]]
+                for wall in newWall:
+                    if wall not in self.firstLineWall['RIGHT']:
+                        self.firstLineWall['RIGHT'].append(wall)
+                
+                newWall = [[22,12],[23,12]]
+                for wall in newWall:
+                    if wall not in self.moreWalls:
+                        self.moreWalls.append(wall)
+
             self.build_tower(game_state, predicted_attack_directions)
             self.build_wall(game_state, predicted_attack_directions)
             self.build_support(game_state)
@@ -191,6 +209,7 @@ class AlgoStrategy(gamelib.AlgoCore):
             self.turret_locations['RIGHT'] += [[22,11],[21,10],[20,9],[25,11],[23,9]]
             
             self.removeWall(game_state,[[20,9],[21,10]])
+            self.removeWall(game_state, [[25,13],[26,13]])
 
             newWall = [[24,10],[26,12]]
             for wall in newWall:
@@ -219,6 +238,8 @@ class AlgoStrategy(gamelib.AlgoCore):
                 for dir in self.firstLineWall.keys():
                     if wall in self.firstLineWall[dir]:
                         self.firstLineWall[dir].remove(wall)
+                if wall in self.moreWalls:
+                        self.moreWalls.remove(wall)
 
     def top_right_wall_weak(self, game_state):
         top_right_wall = [[24,13],[23,12],[22,11]]
@@ -266,7 +287,10 @@ class AlgoStrategy(gamelib.AlgoCore):
         gamelib.debug_write("Turn: {}".format(game_state.turn_number))
         gamelib.debug_write("support: {}".format(self.count_enemy_support(game_state)))
         interceptor_num = 0
-        if enemyMP >= base + 5.0:
+        if enemyMP >= base + 8.0:
+            interceptor_num = 5 + int(enemy_support_counter / 3)
+            interceptor_num += int((enemyMP - base - 5.0) // 4)
+        elif enemyMP >= base + 5.0:
             interceptor_num = 5 + int(enemy_support_counter / 3)
         elif enemyMP >= base + 3.0:
             interceptor_num = 4 + int(enemy_support_counter / 3)
@@ -290,7 +314,7 @@ class AlgoStrategy(gamelib.AlgoCore):
                 game_state.attempt_spawn(INTERCEPTOR, [22, 8], int(enemy_support_counter / 3))
 
     def replaceWall(self, game_state):    
-        allWalls = self.moreWalls 
+        allWalls = copy.deepcopy(self.moreWalls) 
         for dir in self.firstLineWall.keys():
             allWalls += self.firstLineWall[dir]
 
@@ -378,9 +402,7 @@ class AlgoStrategy(gamelib.AlgoCore):
             attackRight = False
 
         if attackRight:
-            game_state.attempt_remove([[26,12],[26,13]])
-            # self.portToOpen.append([26,13])
-            # self.portOpened = True
+            game_state.attempt_remove([[26,12],[26,13], [24,10]])
             return RIGHT_KAMIKAZE
         else:
             game_state.attempt_remove([[1,12],[1,13],[3,10]])

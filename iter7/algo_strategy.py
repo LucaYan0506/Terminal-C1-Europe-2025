@@ -6,7 +6,6 @@ from sys import maxsize
 import json
 import copy
 
-
 """
 Most of the algo code you write will be in this file unless you create new
 modules yourself. Start by modifying the 'on_turn' function.
@@ -26,7 +25,6 @@ class AlgoStrategy(gamelib.AlgoCore):
         seed = random.randrange(maxsize)
         random.seed(seed)
         # gamelib.debug_write('Random seed: {}'.format(seed))
-
         self.firstLineWall = {
             'LEFT':[[0,13],[3,13],[1,12],[3,10]],
             'MID':[],
@@ -156,6 +154,8 @@ class AlgoStrategy(gamelib.AlgoCore):
                 for wall in newWall:
                     if wall not in self.moreWalls:
                         self.moreWalls.append(wall)
+            if self.detect_enemy_trapped(game_state):
+                predicted_attack_directions = ['TRAPPED']
 
             self.build_tower(game_state, predicted_attack_directions)
             self.build_wall(game_state, predicted_attack_directions)
@@ -184,7 +184,8 @@ class AlgoStrategy(gamelib.AlgoCore):
     def build_tower(self, game_state, predicted_attack_directions = []):
         # build turret where we predict an attack to happen first
         for dir in predicted_attack_directions:
-            game_state.attempt_spawn(TURRET, self.turret_locations[dir])
+            if dir in self.turret_locations.keys():
+                game_state.attempt_spawn(TURRET, self.turret_locations[dir])
 
         # build the rest
         for dir in self.turret_locations.keys():
@@ -224,7 +225,8 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         # build turret where we predict an attack to happen first
         for dir in predicted_attack_directions:
-            game_state.attempt_spawn(WALL, self.firstLineWall[dir])
+            if dir in self.firstLineWall.keys():
+                game_state.attempt_spawn(WALL, self.firstLineWall[dir])
 
         # build the rest
         for dir in self.turret_locations.keys():
@@ -240,7 +242,6 @@ class AlgoStrategy(gamelib.AlgoCore):
                         self.firstLineWall[dir].remove(wall)
                 if wall in self.moreWalls:
                         self.moreWalls.remove(wall)
-
     def top_right_wall_weak(self, game_state):
         top_right_wall = [[24,13],[23,12],[22,11]]
         for [x,y] in top_right_wall:
@@ -257,7 +258,8 @@ class AlgoStrategy(gamelib.AlgoCore):
     def update_wall(self, game_state, predicted_attack_directions = []):
         # upgrade wall where we predict an attack to happen first
         for dir in predicted_attack_directions:
-            game_state.attempt_upgrade(self.firstLineWall[dir])
+            if dir in self.firstLineWall.keys():
+                game_state.attempt_upgrade(self.firstLineWall[dir])
 
         # upgrade the rest
         for dir in self.firstLineWall.keys():
@@ -270,7 +272,8 @@ class AlgoStrategy(gamelib.AlgoCore):
     def update_tower(self, game_state, predicted_attack_directions = []):
         # upgrade turret where we predict an attack to happen first
         for dir in predicted_attack_directions:
-            game_state.attempt_upgrade(self.turret_locations[dir])
+            if dir in self.turret_locations.keys():
+                game_state.attempt_upgrade(self.turret_locations[dir])
 
         # upgrade the rest
         for dir in self.turret_locations.keys():
@@ -278,6 +281,9 @@ class AlgoStrategy(gamelib.AlgoCore):
                 game_state.attempt_upgrade(self.turret_locations[dir])
 
     def spawnInterceptor(self, game_state, predicted_attack_directions):
+        if "TRAPPED" in predicted_attack_directions:
+            return
+
         enemyMP = game_state.get_resource(MP,1)
         # gamelib.debug_write('enemyMP {}'.format(enemyMP))
         base = 7.0
@@ -372,6 +378,86 @@ class AlgoStrategy(gamelib.AlgoCore):
             predicted_attack_directions.append("RIGHT")
 
         return predicted_attack_directions
+    
+    def detect_enemy_trapped(self, game_state):
+        """
+        Detect if the enemy has no position to send units from and no pending wall removals
+        Returns True if enemy is detected to be trapped, False otherwise
+        """
+        # Check if the enemy has any border positions without units (to spawn from)
+        has_valid_path = False
+        all_edges = game_state.game_map.get_edges()
+        left_edge = game_state.game_map.get_edge_locations(game_state.game_map.TOP_LEFT)
+        right_edge = game_state.game_map.get_edge_locations(game_state.game_map.TOP_RIGHT)
+        enemy_points = left_edge + right_edge
+
+        for enemy_point in enemy_points:
+            path = game_state.find_path_to_edge(enemy_point)
+            if path and len(path) > 1:
+                final_position = path[-1]
+                for edge_list in all_edges:
+                    if final_position in edge_list:
+                        has_valid_path = True
+                        break
+
+       
+        # Check if enemy has any walls set for removal
+        has_pending_removal = False
+        
+        # Check both sides of the map for pending removals
+        if len(self.enemy_append_removal_unit) > 0:
+            has_pending_removal = True
+        
+        # Also check locations right at the halfway point for our side
+        # for x in range(game_state.game_map.ARENA_SIZE):
+        #     if game_state.contains_stationary_unit([x, 13]):
+        #         unit = game_state.game_map[x, 13][0]
+        #         if unit.player_index == 0 and unit.pending_removal:
+        #             has_pending_removal = True
+        #             break
+        
+        # Enemy is trapped if they have no spawn positions and no pending removals
+        is_trapped = not has_valid_path and not has_pending_removal
+        if is_trapped:
+            gamelib.debug_write("Enemy detected as trapped! No open spawn positions and no pending wall removals.")
+        return is_trapped
+    
+    def execute_finishing_attack(self, game_state):
+        """
+        If enemy is trapped with no way to spawn or remove units, execute a heavy attack
+        to finish them off
+        """
+        # Build up a heavy attack force with demolishers for structures
+        mp = game_state.get_resource(MP)
+        
+        # First ensure our own defenses are solid
+        self.build_wall(game_state)
+        self.build_tower(game_state)
+        
+        # Launch a coordinated attack with a mix of units
+        demolisher_count = min(5, mp // game_state.type_cost(DEMOLISHER)[MP])
+        mp -= demolisher_count * game_state.type_cost(DEMOLISHER)[MP]
+        
+        # Send demolishers from both sides to destroy their structures
+        if demolisher_count >= 2:
+            left_demo = demolisher_count // 2
+            right_demo = demolisher_count - left_demo
+            
+            # Left side demolishers
+            if left_demo > 0:
+                game_state.attempt_spawn(DEMOLISHER, [3, 10], left_demo)
+                
+            # Right side demolishers
+            if right_demo > 0:
+                game_state.attempt_spawn(DEMOLISHER, [24, 10], right_demo)
+        else:
+            # If only 1 demolisher, send it down the middle
+            game_state.attempt_spawn(DEMOLISHER, [14, 0], demolisher_count)
+        
+        # Use remaining MP for scouts
+        scout_count = mp // game_state.type_cost(SCOUT)[MP]
+        if scout_count > 0:
+            game_state.attempt_spawn(SCOUT, [14, 0], scout_count)
 
 
     def on_action_frame(self, turn_string):
@@ -403,17 +489,30 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         if attackRight:
             game_state.attempt_remove([[26,12],[26,13], [24,10]])
+            # check if health of wall at [24,13] is less than 50
+            if game_state.game_map[24,13] and game_state.game_map[24,13][0].unit_type == WALL:
+                if game_state.game_map[24,13][0].health < 50:
+                    game_state.attempt_remove([24,13])
+
             return RIGHT_KAMIKAZE
         else:
             game_state.attempt_remove([[1,12],[1,13],[3,10]])
+            # check if health of wall at [3,13] is less than 50
+            if game_state.game_map[3,13] and game_state.game_map[3,13][0].unit_type == WALL:
+                if game_state.game_map[3,13][0].health < 50:
+                    game_state.attempt_remove([3,13])
 
             return LEFT_KAMIKAZE
 
     def kamikaze_attack(self, game_state):
         if self.kamikaze_attack_location == RIGHT_KAMIKAZE:
+            game_state.attempt_spawn(WALL, [24,13]) # reinforce
+            game_state.attempt_spawn(WALL, [22,13])
             game_state.attempt_spawn(INTERCEPTOR, [24,10], 4)
             game_state.attempt_spawn(SCOUT, [13,0], game_state.number_affordable(SCOUT))
         else:
+            game_state.attempt_spawn(WALL, [3,13])
+            game_state.attempt_spawn(WALL, [4,13])
             game_state.attempt_spawn(INTERCEPTOR, [3,10], 4)
             game_state.attempt_spawn(SCOUT, [14,0], game_state.number_affordable(SCOUT))
 

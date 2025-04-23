@@ -6,6 +6,9 @@ from sys import maxsize
 import json
 import copy
 
+import gamelib.navigation
+
+
 """
 Most of the algo code you write will be in this file unless you create new
 modules yourself. Start by modifying the 'on_turn' function.
@@ -122,16 +125,21 @@ class AlgoStrategy(gamelib.AlgoCore):
             self.kamikaze_attack_location = 0
             # if we have more than 15MP
             if game_state.get_resource(MP) > 15 and game_state.get_resource(SP) < 9:
-                dirToAttack = self.plan_kamikaze_attack(game_state)
-                # opposite side of the kamikaze attack coz it returns weaker side
-                if dirToAttack == RIGHT_KAMIKAZE:
-                    game_state.attempt_remove([3,10])
-                    game_state.attempt_spawn(DEMOLISHER, [3,10], 4)
-                    game_state.attempt_spawn(SCOUT, [14,0], 1000)
-                elif dirToAttack == LEFT_KAMIKAZE:
-                    game_state.attempt_remove([24,10])
-                    game_state.attempt_spawn(DEMOLISHER, [24,10], 4)
-                    game_state.attempt_spawn(SCOUT, [13,0], 1000)
+                if self.count_ally_support(game_state) >= 4:
+                    bestTwoLoc = self.findBestLoc(game_state)
+                    game_state.attempt_spawn(DEMOLISHER, bestTwoLoc[0], 4)
+                    game_state.attempt_spawn(SCOUT, bestTwoLoc[1], 1000)
+                else:
+                    path = game_state.find_path_to_edge([14,0])
+                    if self.is_path_clear_of_enemy_walls(game_state,path):
+                        game_state.attempt_spawn(SCOUT, [13,0], 1000)
+                    else:
+                        bestTwoLoc = self.findBestLoc2(game_state)
+                        n = game_state.number_affordable(SCOUT)
+                        game_state.attempt_spawn(SCOUT, bestTwoLoc[0], max(n//2,5))
+                        game_state.attempt_spawn(SCOUT, bestTwoLoc[1], 1000)
+                    
+
 
         if self.will_kamikaze_attack:
             if self.kamikaze_attack_location == LEFT_KAMIKAZE:
@@ -192,6 +200,85 @@ class AlgoStrategy(gamelib.AlgoCore):
         for x, y in self.moreSupportLocations:
             game_state.attempt_spawn(SUPPORT, [x,y])
             game_state.attempt_upgrade([x,y])
+
+    def is_path_clear_of_enemy_walls(self, game_state, path):
+        for loc in path:
+            # gamelib.debug_write("path: {}".format(loc))
+            
+            units = game_state.game_map[loc[0], loc[1]]
+            for unit in units:
+                if unit.player_index == 1 and unit.unit_type in [WALL, TURRET]:
+                    return False
+        return True
+
+    def findBestLoc(self,game_state):
+        edges = []
+        for y in range(14):
+            x = 13 - y
+            if len(game_state.game_map[x,y]) == 0:
+                edges.append([x,y])
+        for y in range(14):
+            x = 14 + y
+            if len(game_state.game_map[x,y]) == 0:
+                edges.append([x,y])  
+        
+        for loc1 in edges:
+            for loc2 in edges:
+                demolisher_path = game_state.find_path_to_edge(loc1)
+                scout_path = game_state.find_path_to_edge(loc2)
+
+                for i in range(len(demolisher_path)):
+                    if demolisher_path[i][1] > 13:
+                        demolisher_path = demolisher_path[:i]
+                        break
+
+                for i in range(len(scout_path)):
+                    if scout_path[i][1] > 13:
+                        scout_path = scout_path[:i]
+                        break
+
+                if game_state.game_map.distance_between_locations(demolisher_path[-1], scout_path[-1]) <= 2:
+                    if abs(len(scout_path) // 2 - len(demolisher_path)) < 2:
+                        #return demolisher loc first
+                        return [loc1,loc2]
+                    
+            
+            return [[5,8],[13,0]]
+                                
+    def findBestLoc2(self,game_state):
+        edges = []
+        for y in range(14):
+            x = 13 - y
+            if len(game_state.game_map[x,y]) == 0:
+                edges.append([x,y])
+        for y in range(14):
+            x = 14 + y
+            if len(game_state.game_map[x,y]) == 0:
+                edges.append([x,y])  
+        
+        for loc1 in edges:
+            for loc2 in edges:
+                demolisher_path = game_state.find_path_to_edge(loc1)
+                scout_path = game_state.find_path_to_edge(loc2)
+
+                for i in range(len(demolisher_path)):
+                    if demolisher_path[i][1] > 13:
+                        demolisher_path = demolisher_path[:i]
+                        break
+
+                for i in range(len(scout_path)):
+                    if scout_path[i][1] > 13:
+                        scout_path = scout_path[:i]
+                        break
+
+                if game_state.game_map.distance_between_locations(demolisher_path[-1], scout_path[-1]) <= 2:
+                    if 4 < abs(len(scout_path) - len(demolisher_path)) > 1 :
+                        #return demolisher loc first
+                        return [loc1,loc2]
+                    
+            
+            return [[13,0],[13,0]]
+                                
 
     def build_tower(self, game_state, predicted_attack_directions = []):
         # build turret where we predict an attack to happen first
@@ -375,6 +462,16 @@ class AlgoStrategy(gamelib.AlgoCore):
 
         return counter
 
+    def count_ally_support(self, game_state):
+        counter = 0
+        for i in range(14):
+            y = 13 - i
+            for x in range(i,28 - i):
+                if len(game_state.game_map[x,y]) > 0 and game_state.game_map[x,y][0].unit_type == SUPPORT:
+                    counter += 1
+
+        return counter
+
     def check_potential_enemy_attack(self, game_state):
         predicted_attack_directions = []
         if (1,14) in self.enemy_append_removal_unit or (2,14) in self.enemy_append_removal_unit:
@@ -449,30 +546,6 @@ class AlgoStrategy(gamelib.AlgoCore):
         elif right_price >= left_price + 10:
             return newAns[-1]
 
-        # last resort: follow the structures along the corners and check symmetry
-        left_corner = [(x, 14) for x in range(14)]
-        right_corner = [(x, 14) for x in range(27, 13, -1)]
-
-        for (lx, ly), (rx, ry) in zip(left_corner, right_corner):
-            left_struct = game_state.game_map[lx, ly][0] if game_state.game_map[lx, ly] else None
-            right_struct = game_state.game_map[rx, ry][0] if game_state.game_map[rx, ry] else None
-            if left_struct is None and right_struct is None:
-                return newAns[0]
-            if left_struct is None and right_struct is not None:
-                return newAns[-1]
-            if left_struct is not None and right_struct is None:
-                return newAns[1]
-            if not left_struct.upgraded and right_struct.upgraded:
-                return newAns[-1]
-            if left_struct.upgraded and not right_struct.upgraded:
-                return newAns[1]
-            if left_struct.pending_removal and not right_struct.pending_removal:
-                return newAns[-1]
-            if not left_struct.pending_removal and right_struct.pending_removal:
-                return newAns[1]
-
-        # theoretically possible to reach this code (if top edge is perfectly symmetrical with no holes)
-        # but in practice will probably never happen
         return newAns[0]
     
     def detect_enemy_trapped(self, game_state):
